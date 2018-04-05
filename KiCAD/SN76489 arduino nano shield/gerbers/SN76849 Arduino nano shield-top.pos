@@ -1,0 +1,9 @@
+### Module positions - created on 03/04/18 16:22:04 ###
+### Printed by Pcbnew version kicad 4.0.4-stable
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                PosX       PosY       Rot  Side
+C2        CP_10uF   C_1210              62.3570   -41.4020  180.0000  top
+C3        CP_220uF  C_1210              42.6720   -25.0190  180.0000  top
+R2        R1k       R_1206              52.4510   -41.4020    0.0000  top
+## End

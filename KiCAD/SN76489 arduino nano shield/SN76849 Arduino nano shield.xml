@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/michiele/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/projecten/Ander/EasyLab4Kids/EasyLab/KiCAD/geluid/SN76489 geluidsspeler/SN76489 arduino nano shield/SN76849 Arduino nano shield.sch</source>
+    <date>donderdag 01 februari 2018 'o10' 12:10:56</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SN76489 geluid shield vir Arduino Nano</title>
+        <company>EasyLab4Kids</company>
+        <rev>0.5</rev>
+        <date>2017-12-17</date>
+        <source>SN76849 Arduino nano shield.sch</source>
+        <comment number="1" value="Ontwerp: Michiel Erasmus"/>
+        <comment number="2" value="Webwerf: https://www.facebook.com/EasyBlocks4Kids/"/>
+        <comment number="3" value="gebruik mxUnifiedSN76489 en Arduino  as clock"/>
+        <comment number="4" value="Geluidskaart vir Arduino met Sega Genisis geluidskaart"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>CP_10uF</value>
+      <footprint>Capacitors_SMD:C_1210</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2949D2</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Arduino_SPI</value>
+      <footprint>Socket_Strips:Socket_Strip_Angled_1x04_Pitch2.54mm</footprint>
+      <libsource lib="easylab4kids" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A376358</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>Audio_uit</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="easylab4kids" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6AC6F8</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>SN76489</value>
+      <footprint>w_pth_circuits:dil_16-300_socket</footprint>
+      <datasheet>https://github.com/maxint-rd/mxUnifiedSN76489/blob/master/documentation/datasheet%20SN76489AN.pdf</datasheet>
+      <libsource lib="easylab4kids" part="SN76489"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6B07E8</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>74HC595</value>
+      <footprint>w_pth_circuits:dil_16-300_socket</footprint>
+      <datasheet>https://github.com/maxint-rd/mxUnified74HC595</datasheet>
+      <libsource lib="easylab4kids" part="74HC595_e4k"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A706BBD</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Arduino_sn</value>
+      <footprint>Socket_Strips:Socket_Strip_Angled_1x03</footprint>
+      <libsource lib="conn" part="Conn_01x03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A72FDF5</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="easylab4kids" part="74HC595_e4k">
+      <description>74HC595 skuif register 0.1 20180129</description>
+      <docs>74xx/74HC595.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC595_e4k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="QB" type="3state"/>
+        <pin num="2" name="QC" type="3state"/>
+        <pin num="3" name="QD" type="3state"/>
+        <pin num="4" name="QE" type="3state"/>
+        <pin num="5" name="QF" type="3state"/>
+        <pin num="6" name="QG" type="3state"/>
+        <pin num="7" name="QH" type="3state"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="~QH" type="power_in"/>
+        <pin num="10" name="SRCLR" type="3state"/>
+        <pin num="11" name="SRCLK" type="3state"/>
+        <pin num="12" name="RCLK" type="3state"/>
+        <pin num="13" name="OE" type="power_in"/>
+        <pin num="14" name="SER" type="3state"/>
+        <pin num="15" name="QA" type="power_in"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="easylab4kids" part="CONN_01X03">
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="easylab4kids" part="CONN_01X04">
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="easylab4kids" part="SN76489">
+      <description>Musiek chip van BBC Micro</description>
+      <docs>https://www.arduino.cc/en/Tutorial/ShiftOut</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN76489</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D5" type="input"/>
+        <pin num="2" name="D6" type="input"/>
+        <pin num="3" name="D7" type="output"/>
+        <pin num="4" name="READY" type="power_out"/>
+        <pin num="5" name="~WE" type="power_in"/>
+        <pin num="6" name="~CE" type="power_in"/>
+        <pin num="7" name="AUDIO_OUT" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="N.C." type="NotConnected"/>
+        <pin num="10" name="D0" type="input"/>
+        <pin num="11" name="D1" type="input"/>
+        <pin num="12" name="D2" type="input"/>
+        <pin num="13" name="D3" type="input"/>
+        <pin num="14" name="CLOCK" type="input"/>
+        <pin num="15" name="D4" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="easylab4kids">
+      <uri>/Users/michiele/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/projecten/Ander/EasyLab4Kids/EasyLab/KiCAD/geluid/SN76489 geluidsspeler/SN76489 arduino nano shield/library/easylab4kids.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/SS">
+      <node ref="J2" pin="3"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="2" name="/MOSI">
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="3" name="/SCLK">
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="4" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="5" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="6" name="/QE">
+      <node ref="U3" pin="13"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="7" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="8" name="/Clock">
+      <node ref="J1" pin="3"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="9" name="/CE">
+      <node ref="J2" pin="4"/>
+      <node ref="P1" pin="3"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="10" name="/WE">
+      <node ref="J1" pin="2"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="11" name="/SRCLR">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="16"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="12" name="/QH">
+      <node ref="U3" pin="10"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="13" name="/QB">
+      <node ref="U1" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="14" name="/QC">
+      <node ref="U3" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="15" name="/QA">
+      <node ref="U1" pin="15"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="16" name="/QD">
+      <node ref="U3" pin="15"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="17" name="/QF">
+      <node ref="U1" pin="5"/>
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="18" name="/QG">
+      <node ref="U3" pin="11"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="20" name="/Audio">
+      <node ref="U3" pin="7"/>
+      <node ref="P1" pin="2"/>
+      <node ref="P1" pin="1"/>
+    </net>
+  </nets>
+</export>

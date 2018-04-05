@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0  Date: 26/8/2005-02:48:16
+#
+$CMP XTAL-Q1
+D Cristal Oscilador de 4 pinos
+K XTAL
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,462 @@
+## Footprint report - date 03/04/18 16:21:17
+## Created by Pcbnew version kicad 4.0.4-stable
+## Unit = mm, Angle = deg.
+
+$BeginDESCRIPTION
+
+$BOARD
+upper_left_corner 14.783999 19.990999
+lower_right_corner 86.435001 65.734001
+$EndBOARD
+
+$MODULE "U1"
+reference "U1"
+value "PCF8574"
+footprint "w_pth_circuits:dil_16-300_socket"
+attribut none
+position 28.448000 54.356000  orientation 0.00
+layer front
+$PAD "1"
+Shape Ovaal Layer both
+position -8.890000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position -6.350000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position -3.810000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "4"
+Shape Ovaal Layer both
+position -1.270000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "5"
+Shape Ovaal Layer both
+position  1.270000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "6"
+Shape Ovaal Layer both
+position  3.810000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "7"
+Shape Ovaal Layer both
+position  6.350000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "8"
+Shape Ovaal Layer both
+position  8.890000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "9"
+Shape Ovaal Layer both
+position  8.890000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "10"
+Shape Ovaal Layer both
+position  6.350000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "11"
+Shape Ovaal Layer both
+position  3.810000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "12"
+Shape Ovaal Layer both
+position  1.270000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "13"
+Shape Ovaal Layer both
+position -1.270000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "14"
+Shape Ovaal Layer both
+position -3.810000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "15"
+Shape Ovaal Layer both
+position -6.350000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "16"
+Shape Ovaal Layer both
+position -8.890000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  U1
+
+$MODULE "RV1"
+reference "RV1"
+value "POT_50k"
+footprint "w_pth_resistors:trimmer_alps-rk09k1130ah1"
+attribut none
+position 33.274000 36.068000  orientation 180.00
+layer front
+$PAD "1"
+Shape Ovaal Layer both
+position -2.500000  7.000000  size  1.500000  2.000000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position  0.000000  7.000000  size  1.500000  2.000000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position  2.500000  7.000000  size  1.500000  2.000000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD ""
+Shape Cirkel Layer both
+position -4.800000  0.000000  size  3.500000  3.500000  orientation 0.00
+drill  2.200000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD ""
+Shape Cirkel Layer both
+position  4.800000  0.000000  size  3.500000  3.500000  orientation 0.00
+drill  2.200000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  RV1
+
+$MODULE "C2"
+reference "C2"
+value "CP_10uF"
+footprint "Capacitors_SMD:C_1210"
+attribut smd
+position 62.357000 41.402000  orientation 180.00
+layer front
+$PAD "1"
+Shape Vierkant Layer front
+position -1.500000  0.000000  size  1.000000  2.500000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Vierkant Layer front
+position  1.500000  0.000000  size  1.000000  2.500000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  C2
+
+$MODULE "C3"
+reference "C3"
+value "CP_220uF"
+footprint "Capacitors_SMD:C_1210"
+attribut smd
+position 42.672000 25.019000  orientation 180.00
+layer front
+$PAD "1"
+Shape Vierkant Layer front
+position -1.500000  0.000000  size  1.000000  2.500000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Vierkant Layer front
+position  1.500000  0.000000  size  1.000000  2.500000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  C3
+
+$MODULE "J1"
+reference "J1"
+value "Arduino_sn"
+footprint "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm"
+attribut none
+position 74.041000 54.102000  orientation 180.00
+layer front
+$PAD "1"
+Shape Vierkant Layer both
+position  0.000000  0.000000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position  0.000000  2.540000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position  0.000000  5.080000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  J1
+
+$MODULE "P1"
+reference "P1"
+value "Audio_uit"
+footprint "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm"
+attribut none
+position 74.168000 29.972000  orientation 180.00
+layer front
+$PAD "1"
+Shape Vierkant Layer both
+position  0.000000  0.000000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position  0.000000  2.540000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position  0.000000  5.080000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  P1
+
+$MODULE "U2"
+reference "U2"
+value "LM358"
+footprint "w_pth_circuits:dil_8-300_socket"
+attribut none
+position 52.324000 32.512000  orientation 0.00
+layer front
+$PAD "1"
+Shape Ovaal Layer both
+position -3.810000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position -1.270000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position  1.270000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "4"
+Shape Ovaal Layer both
+position  3.810000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "5"
+Shape Ovaal Layer both
+position  3.810000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "6"
+Shape Ovaal Layer both
+position  1.270000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "7"
+Shape Ovaal Layer both
+position -1.270000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "8"
+Shape Ovaal Layer both
+position -3.810000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  U2
+
+$MODULE "U3"
+reference "U3"
+value "SN76489"
+footprint "w_pth_circuits:dil_16-300_socket"
+attribut none
+position 56.388000 55.753000  orientation 0.00
+layer front
+$PAD "1"
+Shape Ovaal Layer both
+position -8.890000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position -6.350000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position -3.810000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "4"
+Shape Ovaal Layer both
+position -1.270000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "5"
+Shape Ovaal Layer both
+position  1.270000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "6"
+Shape Ovaal Layer both
+position  3.810000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "7"
+Shape Ovaal Layer both
+position  6.350000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "8"
+Shape Ovaal Layer both
+position  8.890000  3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "9"
+Shape Ovaal Layer both
+position  8.890000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "10"
+Shape Ovaal Layer both
+position  6.350000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "11"
+Shape Ovaal Layer both
+position  3.810000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "12"
+Shape Ovaal Layer both
+position  1.270000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "13"
+Shape Ovaal Layer both
+position -1.270000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "14"
+Shape Ovaal Layer both
+position -3.810000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "15"
+Shape Ovaal Layer both
+position -6.350000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "16"
+Shape Ovaal Layer both
+position -8.890000 -3.810000  size  1.501140  2.199640  orientation 0.00
+drill  0.800100
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  U3
+
+$MODULE "P3"
+reference "P3"
+value "I2C"
+footprint "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm"
+attribut none
+position 74.168000 43.180000  orientation 180.00
+layer front
+$PAD "1"
+Shape Vierkant Layer both
+position  0.000000  0.000000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Ovaal Layer both
+position  0.000000  2.540000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Ovaal Layer both
+position  0.000000  5.080000  size  1.700000  1.700000  orientation 0.00
+drill  1.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  P3
+
+$MODULE "R2"
+reference "R2"
+value "R1k"
+footprint "Resistors_SMD:R_1206"
+attribut smd
+position 52.451000 41.402000  orientation 0.00
+layer front
+$PAD "1"
+Shape Vierkant Layer front
+position -1.450000  0.000000  size  0.900000  1.700000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Vierkant Layer front
+position  1.450000  0.000000  size  0.900000  1.700000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  R2
+
+$EndDESCRIPTION
