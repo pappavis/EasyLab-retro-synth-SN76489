@@ -31,7 +31,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino
 LIBS:easylab4kids
-LIBS:74hc595
 LIBS:SN76849 Arduino nano shield-cache
 EELAYER 25 0
 EELAYER END
@@ -39,8 +38,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-08-11"
-Rev "0.3 20180330"
+Date "2018-04-05"
+Rev "0.3 20180405"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"

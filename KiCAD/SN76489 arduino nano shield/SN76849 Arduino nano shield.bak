@@ -48,27 +48,27 @@ Comment3 "gebruik mxUnifiedSN76489 en Arduino  as clock"
 Comment4 "Geluidskaart vir Arduino met Sega Genisis geluidskaart"
 $EndDescr
 Text Label 5850 1210 0    32   ~ 0
-D6
+P6
 Text Label 5850 1110 0    32   ~ 0
-D5
+P5
 Text Label 5850 1310 0    32   ~ 0
-D7
+P7
 Text Label 5850 1510 0    32   ~ 0
 WE
 Text Label 5850 1810 0    36   ~ 0
 VSS
 Text Label 7150 1210 0    36   ~ 0
-D4
+P4
 Text Label 7150 1310 0    36   ~ 0
 Clock
 Text Label 7150 1410 0    32   ~ 0
-D3
+P3
 Text Label 7150 1510 0    32   ~ 0
-D2
+P2
 Text Label 7150 1610 0    32   ~ 0
-D1
+P1
 Text Label 7150 1710 0    32   ~ 0
-D0
+P0
 Entry Wire Line
 	5500 1910 5600 1810
 Entry Wire Line
@@ -112,17 +112,17 @@ Entry Wire Line
 Entry Wire Line
 	3550 1280 3650 1380
 Text Label 5110 2080 0    36   ~ 0
-D0
+P7
 Text Label 5100 1480 0    36   ~ 0
-D6
+P1
 Text Label 5110 1880 0    36   ~ 0
-D2
+P5
 Text Label 5110 1580 0    36   ~ 0
-D5
+P2
 Text Label 5110 1780 0    36   ~ 0
-D3
+P4
 Text Label 5110 1680 0    36   ~ 0
-D4
+P3
 Entry Wire Line
 	3450 2260 3550 2160
 Entry Wire Line
@@ -142,7 +142,7 @@ WE
 Text Label 3180 2460 0    36   ~ 0
 VCC
 Text Label 5110 1380 0    36   ~ 0
-D7
+P0
 Entry Wire Line
 	5300 1680 5400 1580
 $Comp
@@ -159,7 +159,7 @@ $EndComp
 Text Label 8070 4280 2    36   ~ 0
 VSS
 Text Label 5110 1980 0    36   ~ 0
-D1
+P6
 Entry Wire Line
 	5300 1980 5400 1880
 Text Label 3710 1380 0    28   ~ 0
