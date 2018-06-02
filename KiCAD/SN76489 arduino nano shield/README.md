@@ -8,7 +8,7 @@ Features;<br/>
  - Speel musiek af met MmlMusicPWM ook van MaxInt-RD.<br/>
  - Werkt met Arduino Nano, mega, Attiny85, D-MOS1 WiFi, Digispark USB, ESP8266-01 WiFi enz.
 
-<img src="https://github.com/pappavis/EasyLab-retro-synth-SN76489/blob/master/KiCAD/SN76489%20arduino%20nano%20shield/plaatje/EasyLabMuziek%20editie_SN76489_3d_0.5.png" width="40%" height="40%">
+<img src="https://github.com/pappavis/EasyLab-retro-synth-SN76489/blob/master/KiCAD/SN76489%20arduino%20nano%20shield/plaatje/EasyLabMuziek%20editie_SN76489_3d_0.5.jpg?raw=true" width="40%" height="40%">
 
 [KiCad]: http://www.kicad-pcb.org
 [Arduino]: http://arduino.cc/
