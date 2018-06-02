@@ -4,7 +4,8 @@ Dit is 'n [Arduino][] shield vir [KiCad][] om muziek mee af te speel met gebruik
 Die Sn76489 gebruik 'n 4.0000Mhz clock wat, of hardware clock osscilator kan wees, of gegenereerd met <a href="https://github.com/maxint-rd/FastPwmPin" target="_blank">FastPwmPin</a> van Maxint-RD.<br/>
 <br/>
 Features;<br/>
- - SPI verbinding.<br/>
+ - I2C aansluiting.<br/>
+ - Gebruik arduino as clock op IO-poort 8.<br/>
  - Speel musiek af met MmlMusicPWM ook van MaxInt-RD.<br/>
  - Werkt met Arduino Nano, mega, Attiny85, D-MOS1 WiFi, Digispark USB, ESP8266-01 WiFi enz.
 
@@ -38,7 +39,9 @@ Dit is 'n projek met GNU GPL version 3-lisensie.
 usage of this PCB design should credit me as author. Thanks!
 
 ## Ontwikkelaar ##
-2017-12-07 Michiel Erasmus<br/>
-<br/>
+2017-12-07 Origineel release<br/>
+2017-06-02 Standalone I2C versie gebruikt.<br/>
+
+<br/>\
 #EasyLabMuziek #s4kdenhaag<br/>
 
