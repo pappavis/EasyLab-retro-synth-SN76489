@@ -38,8 +38,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-04-05"
-Rev "0.3 20180405"
+Date "2018-05-16"
+Rev "20180601 0.5"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"
@@ -222,7 +222,7 @@ U 1 1 5A7F5319
 P 7100 4390
 F 0 "C3" H 7110 4460 38  0000 L CNN
 F 1 "CP_220uF" V 6990 4240 30  0000 L CNN
-F 2 "Capacitors_SMD:C_1210" H 7100 4390 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 7100 4390 50  0001 C CNN
 F 3 "" H 7100 4390 50  0001 C CNN
 	1    7100 4390
 	0    -1   -1   0   
@@ -243,7 +243,7 @@ U 1 1 5A96DB87
 P 7490 4390
 F 0 "RV1" H 7490 4310 38  0000 C CNN
 F 1 "POT_50k" H 7490 4390 30  0000 C CNN
-F 2 "w_pth_resistors:trimmer_alps-rk09k1130ah1" H 7490 4390 50  0001 C CNN
+F 2 "w_pth_resistors:trimmer_ecp_ca9-v10" H 7490 4390 50  0001 C CNN
 F 3 "" H 7490 4390 50  0000 C CNN
 	1    7490 4390
 	1    0    0    -1  
@@ -281,7 +281,7 @@ U 1 1 5A9B7BDC
 P 6060 4600
 F 0 "R2" H 6090 4620 38  0000 L CNN
 F 1 "R1k" V 6060 4560 30  0000 L CNN
-F 2 "Resistors_SMD:R_1206" H 6060 4600 50  0001 C CNN
+F 2 "w_pth_resistors:RC03" H 6060 4600 50  0001 C CNN
 F 3 "" H 6060 4600 50  0000 C CNN
 	1    6060 4600
 	1    0    0    -1  
@@ -292,7 +292,7 @@ U 1 1 5A9B9E55
 P 6060 4920
 F 0 "C2" H 6070 4990 38  0000 L CNN
 F 1 "CP_10uF" V 5950 4770 30  0000 L CNN
-F 2 "Capacitors_SMD:C_1210" H 6060 4920 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 6060 4920 50  0001 C CNN
 F 3 "" H 6060 4920 50  0001 C CNN
 	1    6060 4920
 	-1   0    0    1   
@@ -324,6 +324,17 @@ F 2 "" H 5730 1880 50  0000 C CNN
 F 3 "" H 5730 1880 50  0000 C CNN
 	1    5730 1880
 	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 5AEF7BF4
+P 5140 4730
+F 0 "J2" H 5140 4830 50  0000 C CNN
+F 1 "audio_debug" H 5140 4530 30  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5140 4730 50  0001 C CNN
+F 3 "" H 5140 4730 50  0001 C CNN
+	1    5140 4730
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5600 1110 6050 1110
@@ -504,4 +515,10 @@ Connection ~ 5730 1810
 Wire Wire Line
 	5650 1610 5650 1810
 Connection ~ 5650 1810
+Wire Wire Line
+	5340 4730 6060 4730
+Connection ~ 6060 4730
+Wire Wire Line
+	5340 4630 5950 4630
+Connection ~ 5950 4630
 $EndSCHEMATC

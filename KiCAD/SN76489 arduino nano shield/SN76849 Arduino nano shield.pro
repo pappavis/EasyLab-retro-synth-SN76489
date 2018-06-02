@@ -1,4 +1,4 @@
-update=woensdag 28 februari 2018 'o11' 18:11:16
+update=16-5-2018 12:33:37
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,19 +25,9 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
-LibDir=library;../../../../../../../../../../../../../OneDrive/Documenten/GitHub/ander/KiCAD/bibliotheken/agg-kicad/lib/ic/logic
+LibDir=library;../../../../share/kicad/library/ander
 [eeschema/libraries]
 LibName1=SN76849 Arduino nano shield-rescue
 LibName2=power
@@ -71,4 +61,13 @@ LibName29=contrib
 LibName30=valves
 LibName31=arduino
 LibName32=library/easylab4kids
-LibName33=74hc595
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
