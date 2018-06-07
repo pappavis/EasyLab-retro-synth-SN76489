@@ -1,4 +1,4 @@
-## Chiptunes afspeel met Arduno ##
+## Chiptunes afspeel met Arduino ##
 Lang gelede in die 1980's het ons grootgeword met 8-bit rekenaars soos BBC Micro B. Herleef die glorie en gebruik 'n BBC Micro geluidchip op Arduino | Raspberry Pi | Microbit.<br/>
 <br/>
 door: Michiel Erasmus<br/>
