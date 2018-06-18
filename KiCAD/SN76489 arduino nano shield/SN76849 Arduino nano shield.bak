@@ -38,8 +38,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-05-16"
-Rev "04 20180516"
+Date "2018-06-17"
+Rev "20180617 0.7"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"
@@ -127,10 +127,6 @@ Entry Wire Line
 Entry Wire Line
 	3450 2360 3550 2260
 Entry Wire Line
-	3450 2460 3550 2360
-Text Label 3180 2260 0    36   ~ 0
-Clock
-Entry Wire Line
 	3450 1710 3550 1610
 Entry Wire Line
 	3450 1810 3550 1710
@@ -138,24 +134,11 @@ Entry Wire Line
 	3450 1910 3550 1810
 Text Label 3180 2360 0    32   ~ 0
 WE
-Text Label 3180 2460 0    36   ~ 0
-VCC
 Text Label 5110 1380 0    36   ~ 0
 P0
 Entry Wire Line
 	5300 1680 5400 1580
-$Comp
-L CONN_01X03 P1
-U 1 1 5A6AC6F8
-P 8470 4180
-F 0 "P1" H 8470 4380 50  0000 C CNN
-F 1 "Audio_uit" H 8460 3980 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm" H 8470 4180 50  0001 C CNN
-F 3 "" H 8470 4180 50  0000 C CNN
-	1    8470 4180
-	1    0    0    -1  
-$EndComp
-Text Label 8070 4280 2    36   ~ 0
+Text Label 8210 4280 2    36   ~ 0
 VSS
 Text Label 5110 1980 0    36   ~ 0
 P6
@@ -175,7 +158,7 @@ Entry Bus Bus
 	5300 840  5400 940 
 Text Label 5850 1610 0    36   ~ 0
 CE
-Text Label 3190 1710 0    28   ~ 0
+Text Label 3180 1610 0    28   ~ 0
 VCC
 Text Label 3180 1810 0    28   ~ 0
 SCL
@@ -186,17 +169,6 @@ Entry Bus Bus
 Text Notes 3980 3020 0    52   ~ 0
 PCF8574 I2C pin verbindinge
 NoConn ~ 6050 1410
-$Comp
-L Conn_01x03 J1
-U 1 1 5A72FDF5
-P 2800 2360
-F 0 "J1" H 2800 2560 50  0000 C CNN
-F 1 "Arduino_sn" H 2800 2160 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm" H 2800 2360 50  0001 C CNN
-F 3 "" H 2800 2360 50  0001 C CNN
-	1    2800 2360
-	-1   0    0    1   
-$EndComp
 $Comp
 L PCF8574 U1
 U 1 1 5A7F2E84
@@ -219,12 +191,12 @@ VCC
 $Comp
 L CP1_Small C3
 U 1 1 5A7F5319
-P 7100 4390
-F 0 "C3" H 7110 4460 38  0000 L CNN
-F 1 "CP_220uF" V 6990 4240 30  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 7100 4390 50  0001 C CNN
-F 3 "" H 7100 4390 50  0001 C CNN
-	1    7100 4390
+P 7030 4390
+F 0 "C3" H 7040 4460 38  0000 L CNN
+F 1 "CP_220uF" V 6920 4240 30  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 7030 4390 50  0001 C CNN
+F 3 "" H 7030 4390 50  0001 C CNN
+	1    7030 4390
 	0    -1   -1   0   
 $EndComp
 Entry Wire Line
@@ -250,18 +222,6 @@ F 3 "" H 7490 4390 50  0000 C CNN
 $EndComp
 Text Notes 3980 3380 0    44   ~ 0
 SN76849 WE --> Arduino D8\nSN76489 CLOCK --> Arduino Nano D3\n
-$Comp
-L CONN_01X03 P3
-U 1 1 5A977E81
-P 2800 1810
-F 0 "P3" H 2800 2010 50  0000 C CNN
-F 1 "I2C" H 2790 1610 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm" H 2800 1810 50  0001 C CNN
-F 3 "" H 2800 1810 50  0000 C CNN
-	1    2800 1810
-	-1   0    0    1   
-$EndComp
-NoConn ~ 670  1130
 Text Label 5850 1710 0    36   ~ 0
 Audio
 $Comp
@@ -278,24 +238,13 @@ $EndComp
 $Comp
 L R_Small R2
 U 1 1 5A9B7BDC
-P 6060 4600
-F 0 "R2" H 6090 4620 38  0000 L CNN
-F 1 "R1k" V 6060 4560 30  0000 L CNN
-F 2 "w_pth_resistors:RC03" H 6060 4600 50  0001 C CNN
-F 3 "" H 6060 4600 50  0000 C CNN
-	1    6060 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1_Small C2
-U 1 1 5A9B9E55
-P 6060 4920
-F 0 "C2" H 6070 4990 38  0000 L CNN
-F 1 "CP_10uF" V 5950 4770 30  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 6060 4920 50  0001 C CNN
-F 3 "" H 6060 4920 50  0001 C CNN
-	1    6060 4920
-	-1   0    0    1   
+P 5960 4290
+F 0 "R2" V 6010 4290 30  0000 L CNN
+F 1 "R1k" V 5960 4250 30  0000 L CNN
+F 2 "w_pth_resistors:RC03" H 5960 4290 50  0001 C CNN
+F 3 "" H 5960 4290 50  0000 C CNN
+	1    5960 4290
+	0    1    1    0   
 $EndComp
 $Comp
 L SN76489 U3
@@ -312,7 +261,7 @@ Text Notes 5770 5350 0    32   ~ 0
 https://lowvoltage.wordpress.com/2011/05/21/lm358-mic-amp/
 Entry Wire Line
 	5500 3640 5600 3740
-Text Label 5770 5070 0    36   ~ 0
+Text Label 5670 4190 1    36   ~ 0
 Audio
 $Comp
 L GND #PWR01
@@ -328,12 +277,119 @@ $EndComp
 $Comp
 L Conn_01x02 J2
 U 1 1 5AEF7BF4
-P 5140 4730
-F 0 "J2" H 5140 4830 50  0000 C CNN
-F 1 "audio_debug" H 5140 4530 30  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5140 4730 50  0001 C CNN
-F 3 "" H 5140 4730 50  0001 C CNN
-	1    5140 4730
+P 5430 4530
+F 0 "J2" H 5430 4630 50  0000 C CNN
+F 1 "audio_debug" H 5430 4330 30  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 5430 4530 50  0001 C CNN
+F 3 "" H 5430 4530 50  0001 C CNN
+	1    5430 4530
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5B26B587
+P 6390 4880
+F 0 "R1" V 6440 4880 30  0000 L CNN
+F 1 "R10k" V 6390 4830 30  0000 L CNN
+F 2 "w_pth_resistors:RC03" H 6390 4880 50  0001 C CNN
+F 3 "" H 6390 4880 50  0000 C CNN
+	1    6390 4880
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5B26C64E
+P 2800 2360
+F 0 "J1" H 2800 2460 50  0000 C CNN
+F 1 "Arduino_sn" H 2800 2160 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 2800 2360 50  0001 C CNN
+F 3 "" H 2800 2360 50  0001 C CNN
+	1    2800 2360
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x04 J4
+U 1 1 5B26CE55
+P 2800 1810
+F 0 "J4" H 2800 2010 50  0000 C CNN
+F 1 "I2C" H 2800 1510 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 2800 1810 50  0001 C CNN
+F 3 "" H 2800 1810 50  0001 C CNN
+	1    2800 1810
+	-1   0    0    1   
+$EndComp
+Entry Wire Line
+	3430 1610 3530 1510
+Text Label 3180 1710 0    28   ~ 0
+VSS
+Text Label 3180 2260 0    28   ~ 0
+Clock
+Text Notes 7430 3810 0    60   ~ 0
+OpAmp
+$Comp
+L LED_Small D1
+U 1 1 5B26D96D
+P 7280 4830
+F 0 "D1" H 7250 4940 30  0000 L CNN
+F 1 "Liggie" H 7220 4760 30  0000 L CNN
+F 2 "LEDs:LED_D3.0mm" V 7280 4830 50  0001 C CNN
+F 3 "" V 7280 4830 50  0001 C CNN
+	1    7280 4830
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 5B26DBB3
+P 7280 4550
+F 0 "R3" V 7330 4550 30  0000 L CNN
+F 1 "220" V 7280 4510 30  0000 L CNN
+F 2 "w_pth_resistors:RC03" H 7280 4550 50  0001 C CNN
+F 3 "" H 7280 4550 50  0000 C CNN
+	1    7280 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5B26F111
+P 780 1030
+F 0 "J5" H 780 1130 50  0000 C CNN
+F 1 "LOGO" H 780 930 50  0000 C CNN
+F 2 "lib_michiel:Sovjet_simpits_logo01" H 780 1030 50  0001 C CNN
+F 3 "" H 780 1030 50  0001 C CNN
+	1    780  1030
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5B26F3ED
+P 1260 1010
+F 0 "J6" H 1260 1110 50  0000 C CNN
+F 1 "gat1" H 1260 910 30  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad" H 1260 1010 50  0001 C CNN
+F 3 "" H 1260 1010 50  0001 C CNN
+	1    1260 1010
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J7
+U 1 1 5B26F4E1
+P 1260 1290
+F 0 "J7" H 1260 1390 50  0000 C CNN
+F 1 "gat2" H 1260 1190 30  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad" H 1260 1290 50  0001 C CNN
+F 3 "" H 1260 1290 50  0001 C CNN
+	1    1260 1290
+	-1   0    0    1   
+$EndComp
+$Comp
+L Audio-Jack-5 J8
+U 1 1 5B26D965
+P 8490 4680
+F 0 "J8" H 8440 4890 50  0000 C CNN
+F 1 "geluid_uit" H 8410 4320 30  0000 C CNN
+F 2 "lib_michiel:3.5mm_stereo_TRS_jack_A-853_Tayda_" H 8740 4780 50  0001 C CNN
+F 3 "" H 8740 4780 50  0001 C CNN
+	1    8490 4680
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -379,8 +435,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2360 3450 2360
 Wire Wire Line
-	3000 2460 3450 2460
-Wire Wire Line
 	3450 1710 3000 1710
 Wire Wire Line
 	3000 1810 3450 1810
@@ -389,14 +443,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 1680 5300 1680
 Wire Wire Line
-	7710 4280 8270 4280
-Wire Wire Line
-	7490 4180 8270 4180
-Wire Wire Line
-	8270 4080 7880 4080
-Wire Wire Line
-	7880 4080 7880 4180
-Connection ~ 7880 4180
+	7710 4280 8790 4280
 Wire Wire Line
 	5050 1980 5300 1980
 Wire Notes Line
@@ -457,11 +504,7 @@ Wire Notes Line
 Wire Wire Line
 	5600 1710 6050 1710
 Wire Wire Line
-	6790 4390 7000 4390
-Wire Wire Line
 	5950 3120 5950 5120
-Wire Wire Line
-	7490 4180 7490 4240
 Wire Wire Line
 	7710 5120 7710 4280
 Wire Wire Line
@@ -469,23 +512,11 @@ Wire Wire Line
 Wire Wire Line
 	6390 2940 6390 4090
 Wire Wire Line
-	6190 4290 5950 4290
-Connection ~ 5950 4290
-Wire Wire Line
-	6190 4490 6060 4490
-Wire Wire Line
-	6060 4490 6060 4500
-Wire Wire Line
-	6060 4700 6060 4820
+	5850 4490 6190 4490
 Wire Wire Line
 	5950 3120 5600 3120
 Wire Wire Line
-	6390 5120 6390 4690
-Wire Wire Line
 	5950 5120 7710 5120
-Connection ~ 6390 5120
-Wire Wire Line
-	7200 4390 7340 4390
 Wire Wire Line
 	7640 4390 7710 4390
 Connection ~ 7710 4390
@@ -502,23 +533,78 @@ Wire Notes Line
 Wire Notes Line
 	7490 5360 7490 5280
 Wire Wire Line
-	6060 5020 6060 5070
-Wire Wire Line
-	6060 5070 5660 5070
-Wire Wire Line
-	5660 5070 5660 3740
-Wire Wire Line
-	5660 3740 5600 3740
+	5600 3740 5670 3740
 Wire Wire Line
 	5730 1880 5730 1810
 Connection ~ 5730 1810
 Wire Wire Line
 	5650 1610 5650 1810
 Connection ~ 5650 1810
+Connection ~ 5950 4490
 Wire Wire Line
-	5340 4730 6060 4730
-Connection ~ 6060 4730
+	6190 4290 6060 4290
 Wire Wire Line
-	5340 4630 5950 4630
-Connection ~ 5950 4630
+	6390 4980 6390 5120
+Connection ~ 6390 5120
+Wire Wire Line
+	6390 4690 6390 4780
+Wire Wire Line
+	5670 4010 5670 4290
+Wire Wire Line
+	5670 4290 5860 4290
+Wire Wire Line
+	5630 4430 5700 4430
+Wire Wire Line
+	5700 4430 5700 4290
+Connection ~ 5700 4290
+Wire Wire Line
+	5630 4530 5850 4530
+Wire Wire Line
+	5850 4530 5850 4490
+Wire Wire Line
+	3000 1610 3430 1610
+Wire Notes Line
+	7370 3700 7370 3860
+Wire Notes Line
+	7370 3860 7780 3860
+Wire Wire Line
+	6930 4390 6790 4390
+Wire Wire Line
+	7130 4390 7340 4390
+Wire Wire Line
+	7280 4450 7280 4390
+Connection ~ 7280 4390
+Wire Wire Line
+	7280 4650 7280 4730
+Wire Wire Line
+	7280 4930 7280 5120
+Connection ~ 7280 5120
+Wire Wire Line
+	7490 4240 7900 4240
+Wire Wire Line
+	7900 4240 7900 4780
+Wire Wire Line
+	7900 4480 8290 4480
+Wire Wire Line
+	7900 4580 8290 4580
+Connection ~ 7900 4480
+Wire Wire Line
+	7900 4680 8290 4680
+Connection ~ 7900 4580
+Wire Wire Line
+	7900 4780 8290 4780
+Connection ~ 7900 4680
+Wire Wire Line
+	5670 3740 5670 3810
+$Comp
+L CP1_Small C1
+U 1 1 5B26BD41
+P 5670 3910
+F 0 "C1" H 5680 3980 38  0000 L CNN
+F 1 "CP_220uF" V 5560 3760 30  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 5670 3910 50  0001 C CNN
+F 3 "" H 5670 3910 50  0001 C CNN
+	1    5670 3910
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
