@@ -1,7 +1,119 @@
-Cmp-Mod V01 Created by PcbNew   date = 4-3-2018 16:21:52
+Cmp-Mod V01 Created by PcbNew   date = 24-6-2018 21:00:46
 
 BeginCmp
-TimeStamp = 5A9B2AEF
+TimeStamp = 5B2A0CF5
+Path = /5B26F4E1
+Reference = J7;
+ValeurCmp = gat2;
+IdModule  = Mounting_Holes:MountingHole_2.5mm_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2A0CED
+Path = /5B26F3ED
+Reference = J6;
+ValeurCmp = gat1;
+IdModule  = Mounting_Holes:MountingHole_2.5mm_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2A0D10
+Path = /5B26D965
+Reference = J8;
+ValeurCmp = trs_A-853 geluid uit;
+IdModule  = lib_michiel:3.5mm_stereo_TRS_jack_A-853_Tayda_;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCC0D
+Path = /5B26BD41
+Reference = C1;
+ValeurCmp = CP_220uF;
+IdModule  = Capacitors_THT:CP_Radial_D8.0mm_P2.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCCB6
+Path = /5A7F5319
+Reference = C3;
+ValeurCmp = CP_220uF;
+IdModule  = Capacitors_THT:CP_Radial_D8.0mm_P2.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCCC9
+Path = /5B26D96D
+Reference = D1;
+ValeurCmp = Liggie;
+IdModule  = LEDs:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCCFC
+Path = /5B26C64E
+Reference = J1;
+ValeurCmp = Arduino_sn;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCD2F
+Path = /5AEF7BF4
+Reference = J2;
+ValeurCmp = audio_debug;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCD7C
+Path = /5B26CE55
+Reference = J4;
+ValeurCmp = I2C;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCD89
+Path = /5B26F111
+Reference = J5;
+ValeurCmp = LOGO;
+IdModule  = lib_michiel:Sovjet_simpits_logo01;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCD95
+Path = /5B26B587
+Reference = R1;
+ValeurCmp = R10k;
+IdModule  = w_pth_resistors:RC03;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCDA1
+Path = /5A9B7BDC
+Reference = R2;
+ValeurCmp = R1k;
+IdModule  = w_pth_resistors:RC03;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCDAD
+Path = /5B26DBB3
+Reference = R3;
+ValeurCmp = 220;
+IdModule  = w_pth_resistors:RC03;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCDC4
+Path = /5A96DB87
+Reference = RV1;
+ValeurCmp = POT_50k;
+IdModule  = w_pth_resistors:trimmer_ecp_ca9-v10;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2FCDE8
 Path = /5A7F2E84
 Reference = U1;
 ValeurCmp = PCF8574;
@@ -9,47 +121,7 @@ IdModule  = w_pth_circuits:dil_16-300_socket;
 EndCmp
 
 BeginCmp
-TimeStamp = 5A96E56A
-Path = /5A96DB87
-Reference = RV1;
-ValeurCmp = POT_50k;
-IdModule  = w_pth_resistors:trimmer_alps-rk09k1130ah1;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A7FFF53
-Path = /5A9B9E55
-Reference = C2;
-ValeurCmp = CP_10uF;
-IdModule  = Capacitors_SMD:C_1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A7FFF59
-Path = /5A7F5319
-Reference = C3;
-ValeurCmp = CP_220uF;
-IdModule  = Capacitors_SMD:C_1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A7FFF60
-Path = /5A72FDF5
-Reference = J1;
-ValeurCmp = Arduino_sn;
-IdModule  = Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A7FFF75
-Path = /5A6AC6F8
-Reference = P1;
-ValeurCmp = Audio_uit;
-IdModule  = Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A7FFF9B
+TimeStamp = 5B2FCE04
 Path = /5A9B1A8C
 Reference = U2;
 ValeurCmp = LM358;
@@ -57,27 +129,11 @@ IdModule  = w_pth_circuits:dil_8-300_socket;
 EndCmp
 
 BeginCmp
-TimeStamp = 5A7FFFAF
+TimeStamp = 5B2FCE28
 Path = /5A902B70
 Reference = U3;
 ValeurCmp = SN76489;
 IdModule  = w_pth_circuits:dil_16-300_socket;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A96E561
-Path = /5A977E81
-Reference = P3;
-ValeurCmp = I2C;
-IdModule  = Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5A9B29A6
-Path = /5A9B7BDC
-Reference = R2;
-ValeurCmp = R1k;
-IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 EndListe

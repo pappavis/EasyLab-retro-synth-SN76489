@@ -205,8 +205,6 @@ Entry Wire Line
 	5500 1810 5600 1710
 Text Label 5750 3120 2    36   ~ 0
 VSS
-Entry Wire Line
-	5500 3020 5600 3120
 Text Label 5640 2940 0    36   ~ 0
 VCC
 $Comp
@@ -259,19 +257,17 @@ F 3 "" H 6600 1160 60  0001 C CNN
 $EndComp
 Text Notes 5770 5350 0    32   ~ 0
 https://lowvoltage.wordpress.com/2011/05/21/lm358-mic-amp/
-Entry Wire Line
-	5500 3640 5600 3740
-Text Label 5670 4190 1    36   ~ 0
+Text Label 5670 3930 1    36   ~ 0
 Audio
 $Comp
 L GND #PWR01
 U 1 1 5A9BDD7A
-P 5730 1880
-F 0 "#PWR01" H 5730 1630 50  0001 C CNN
-F 1 "GND" V 5760 1890 34  0000 C CNN
-F 2 "" H 5730 1880 50  0000 C CNN
-F 3 "" H 5730 1880 50  0000 C CNN
-	1    5730 1880
+P 5740 1960
+F 0 "#PWR01" H 5740 1710 28  0001 C CNN
+F 1 "GND" V 5770 1970 34  0000 C CNN
+F 2 "" H 5740 1960 50  0000 C CNN
+F 3 "" H 5740 1960 50  0000 C CNN
+	1    5740 1960
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -319,7 +315,7 @@ F 3 "" H 2800 1810 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Entry Wire Line
-	3430 1610 3530 1510
+	3450 1610 3550 1510
 Text Label 3180 1710 0    28   ~ 0
 VSS
 Text Label 3180 2260 0    28   ~ 0
@@ -392,16 +388,29 @@ F 3 "" H 8740 4780 50  0001 C CNN
 	1    8490 4680
 	-1   0    0    1   
 $EndComp
+$Comp
+L CP1_Small C1
+U 1 1 5B26BD41
+P 5670 4070
+F 0 "C1" H 5680 4140 38  0000 L CNN
+F 1 "CP_220uF" V 5560 3920 30  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 5670 4070 50  0001 C CNN
+F 3 "" H 5670 4070 50  0001 C CNN
+	1    5670 4070
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	5500 3640 5600 3740
+Entry Wire Line
+	5500 3020 5600 3120
+NoConn ~ 1460 1010
+NoConn ~ 1460 1290
 Wire Wire Line
 	5600 1110 6050 1110
 Wire Wire Line
 	5600 1210 6050 1210
 Wire Wire Line
 	5600 1310 6050 1310
-Wire Wire Line
-	5600 1510 6050 1510
-Wire Wire Line
-	5600 1810 6050 1810
 Wire Wire Line
 	7100 1210 7450 1210
 Wire Wire Line
@@ -414,8 +423,6 @@ Wire Wire Line
 	7100 1610 7450 1610
 Wire Wire Line
 	7100 1710 7450 1710
-Wire Bus Line
-	5500 610  5500 2650
 Wire Bus Line
 	7550 610  7550 2060
 Wire Bus Line
@@ -433,8 +440,6 @@ Wire Bus Line
 Wire Wire Line
 	3000 2260 3450 2260
 Wire Wire Line
-	3000 2360 3450 2360
-Wire Wire Line
 	3450 1710 3000 1710
 Wire Wire Line
 	3000 1810 3450 1810
@@ -450,8 +455,6 @@ Wire Notes Line
 	2100 480  2100 810 
 Wire Notes Line
 	2100 810  470  810 
-Wire Wire Line
-	7100 1110 7450 1110
 Wire Wire Line
 	5050 1580 5300 1580
 Wire Wire Line
@@ -497,8 +500,6 @@ Connection ~ 3850 1880
 Wire Wire Line
 	3850 1680 3850 2600
 Connection ~ 3850 2600
-Wire Bus Line
-	5500 2630 5500 3770
 Wire Notes Line
 	7560 5280 5740 5280
 Wire Wire Line
@@ -532,24 +533,12 @@ Wire Notes Line
 	5740 5360 7490 5360
 Wire Notes Line
 	7490 5360 7490 5280
-Wire Wire Line
-	5600 3740 5670 3740
-Wire Wire Line
-	5730 1880 5730 1810
-Connection ~ 5730 1810
-Wire Wire Line
-	5650 1610 5650 1810
-Connection ~ 5650 1810
 Connection ~ 5950 4490
 Wire Wire Line
 	6190 4290 6060 4290
 Wire Wire Line
 	6390 4980 6390 5120
 Connection ~ 6390 5120
-Wire Wire Line
-	6390 4690 6390 4780
-Wire Wire Line
-	5670 4010 5670 4290
 Wire Wire Line
 	5670 4290 5860 4290
 Wire Wire Line
@@ -561,8 +550,6 @@ Wire Wire Line
 	5630 4530 5850 4530
 Wire Wire Line
 	5850 4530 5850 4490
-Wire Wire Line
-	3000 1610 3430 1610
 Wire Notes Line
 	7370 3700 7370 3860
 Wire Notes Line
@@ -595,16 +582,32 @@ Wire Wire Line
 	7900 4780 8290 4780
 Connection ~ 7900 4680
 Wire Wire Line
-	5670 3740 5670 3810
-$Comp
-L CP1_Small C1
-U 1 1 5B26BD41
-P 5670 3910
-F 0 "C1" H 5680 3980 38  0000 L CNN
-F 1 "CP_220uF" V 5560 3760 30  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 5670 3910 50  0001 C CNN
-F 3 "" H 5670 3910 50  0001 C CNN
-	1    5670 3910
-	1    0    0    -1  
-$EndComp
+	5670 3740 5670 3970
+Wire Bus Line
+	5500 610  5500 2650
+Wire Wire Line
+	5600 3740 5670 3740
+Wire Bus Line
+	5500 2630 5500 3770
+Wire Wire Line
+	5670 4290 5670 4170
+Wire Wire Line
+	7100 1110 7450 1110
+Wire Wire Line
+	5600 1810 6050 1810
+Wire Wire Line
+	5650 1610 5650 1810
+Connection ~ 5650 1810
+Wire Wire Line
+	5740 1960 5740 1810
+Connection ~ 5740 1810
+Wire Wire Line
+	3000 2360 3450 2360
+Wire Wire Line
+	5600 1510 6050 1510
+Wire Wire Line
+	3000 1610 3450 1610
+NoConn ~ 980  1030
+Wire Wire Line
+	6390 4690 6390 4780
 $EndSCHEMATC
