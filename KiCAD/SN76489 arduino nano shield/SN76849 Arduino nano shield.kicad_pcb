@@ -3,9 +3,9 @@
   (general
     (links 40)
     (no_connects 0)
-    (area 101.56402 79.74669 172.922001 141.934001)
+    (area 30.963799 20.067199 101.598801 82.193201)
     (thickness 1.6)
-    (drawings 60)
+    (drawings 61)
     (tracks 374)
     (zones 0)
     (modules 17)
@@ -16,7 +16,7 @@
   (title_block
     (title "EasyLab chiptunes")
     (date 2018-06-24)
-    (rev "revisie 0.7.01")
+    (rev "revisie 20180624 0.7.01")
     (company "©2018 EasyLab4Kids en Michiel Erasmus")
     (comment 3 "versie 20180617 0.7.01")
     (comment 4 "SN76489 geluid met I2C")
@@ -1413,6 +1413,9 @@
     )
   )
 
+  (gr_text "revisie 20180624 0.7.01" (at 59.25 75) (layer F.SilkS)
+    (effects (font (size 1.1 1.1) (thickness 0.275)))
+  )
   (gr_text 220uF (at 72.2376 33.8836) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )

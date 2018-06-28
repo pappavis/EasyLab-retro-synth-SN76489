@@ -1,4 +1,4 @@
-update=24-6-2018 21:12:54
+update=25-6-2018 17:23:00
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,9 +25,19 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=library;../../../../share/kicad/library/ander
+LibDir=library;../../../../share/kicad/library/ander;../../../../share/kicad/library
 [eeschema/libraries]
 LibName1=SN76849 Arduino nano shield-rescue
 LibName2=power
@@ -61,14 +71,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=arduino
 LibName32=library/easylab4kids
-LibName33=library/JACK_TRS
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName33=library/trs_jack
