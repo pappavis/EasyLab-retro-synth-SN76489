@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino
 LIBS:easylab4kids
+LIBS:trs_jack
 LIBS:SN76849 Arduino nano shield-cache
 EELAYER 25 0
 EELAYER END
@@ -38,8 +39,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-06-24"
-Rev "20180617 0.7.01"
+Date "2018-07-09"
+Rev "20180617 0.7.02"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"
@@ -138,7 +139,7 @@ Text Label 5110 1380 0    36   ~ 0
 P0
 Entry Wire Line
 	5300 1680 5400 1580
-Text Label 8210 4280 2    36   ~ 0
+Text Label 8210 4480 2    36   ~ 0
 VSS
 Text Label 5110 1980 0    36   ~ 0
 P6
@@ -448,8 +449,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 1680 5300 1680
 Wire Wire Line
-	7710 4280 8790 4280
-Wire Wire Line
 	5050 1980 5300 1980
 Wire Notes Line
 	2100 480  2100 810 
@@ -507,8 +506,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 3120 5950 5120
 Wire Wire Line
-	7710 5120 7710 4280
-Wire Wire Line
 	5600 2940 6390 2940
 Wire Wire Line
 	6390 2940 6390 4090
@@ -520,7 +517,6 @@ Wire Wire Line
 	5950 5120 7710 5120
 Wire Wire Line
 	7640 4390 7710 4390
-Connection ~ 7710 4390
 Wire Notes Line
 	5740 3700 7790 3700
 Wire Notes Line
@@ -569,12 +565,9 @@ Connection ~ 7280 5120
 Wire Wire Line
 	7490 4240 7900 4240
 Wire Wire Line
-	7900 4240 7900 4780
-Wire Wire Line
-	7900 4480 8290 4480
+	7900 4240 7900 4950
 Wire Wire Line
 	7900 4580 8290 4580
-Connection ~ 7900 4480
 Wire Wire Line
 	7900 4680 8290 4680
 Connection ~ 7900 4580
@@ -610,4 +603,53 @@ Wire Wire Line
 NoConn ~ 980  1030
 Wire Wire Line
 	6390 4690 6390 4780
+Wire Wire Line
+	8790 4280 8790 4200
+Wire Wire Line
+	8790 4200 8860 4200
+Wire Wire Line
+	8860 4200 8860 4950
+Wire Wire Line
+	8860 4950 7900 4950
+Connection ~ 7900 4780
+Wire Wire Line
+	7710 4390 7710 5120
+Wire Wire Line
+	7710 4480 8290 4480
+Connection ~ 7710 4480
+$Comp
+L Conn_01x04 J?
+U 1 1 5B43DC64
+P 6120 2390
+F 0 "J?" H 6120 2590 50  0000 C CNN
+F 1 "OLED_128x32" H 6120 2090 38  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 6120 2390 50  0001 C CNN
+F 3 "" H 6120 2390 50  0001 C CNN
+	1    6120 2390
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	5500 2190 5600 2290
+Entry Wire Line
+	5500 2290 5600 2390
+Entry Wire Line
+	5500 2390 5600 2490
+Entry Wire Line
+	5500 2490 5600 2590
+Wire Wire Line
+	5600 2290 5920 2290
+Wire Wire Line
+	5920 2390 5600 2390
+Wire Wire Line
+	5600 2490 5920 2490
+Wire Wire Line
+	5920 2590 5600 2590
+Text Label 5760 2290 0    28   ~ 0
+VCC
+Text Label 5760 2390 0    28   ~ 0
+VSS
+Text Label 5760 2490 0    28   ~ 0
+SCL
+Text Label 5760 2590 0    28   ~ 0
+SDA
 $EndSCHEMATC

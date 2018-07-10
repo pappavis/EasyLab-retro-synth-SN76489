@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino
 LIBS:easylab4kids
+LIBS:trs_jack
 LIBS:SN76849 Arduino nano shield-cache
 EELAYER 25 0
 EELAYER END
@@ -38,8 +39,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-06-17"
-Rev "20180617 0.7"
+Date "2018-07-09"
+Rev "20180617 0.7.02"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"
@@ -138,7 +139,7 @@ Text Label 5110 1380 0    36   ~ 0
 P0
 Entry Wire Line
 	5300 1680 5400 1580
-Text Label 8210 4280 2    36   ~ 0
+Text Label 8210 4480 2    36   ~ 0
 VSS
 Text Label 5110 1980 0    36   ~ 0
 P6
@@ -448,8 +449,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 1680 5300 1680
 Wire Wire Line
-	7710 4280 8790 4280
-Wire Wire Line
 	5050 1980 5300 1980
 Wire Notes Line
 	2100 480  2100 810 
@@ -507,8 +506,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 3120 5950 5120
 Wire Wire Line
-	7710 5120 7710 4280
-Wire Wire Line
 	5600 2940 6390 2940
 Wire Wire Line
 	6390 2940 6390 4090
@@ -517,10 +514,9 @@ Wire Wire Line
 Wire Wire Line
 	5950 3120 5600 3120
 Wire Wire Line
-	5950 5120 7710 5120
+	7710 5120 5950 5120
 Wire Wire Line
 	7640 4390 7710 4390
-Connection ~ 7710 4390
 Wire Notes Line
 	5740 3700 7790 3700
 Wire Notes Line
@@ -569,12 +565,9 @@ Connection ~ 7280 5120
 Wire Wire Line
 	7490 4240 7900 4240
 Wire Wire Line
-	7900 4240 7900 4780
-Wire Wire Line
-	7900 4480 8290 4480
+	7900 4240 7900 4950
 Wire Wire Line
 	7900 4580 8290 4580
-Connection ~ 7900 4480
 Wire Wire Line
 	7900 4680 8290 4680
 Connection ~ 7900 4580
@@ -610,4 +603,18 @@ Wire Wire Line
 NoConn ~ 980  1030
 Wire Wire Line
 	6390 4690 6390 4780
+Wire Wire Line
+	8790 4280 8790 4200
+Wire Wire Line
+	8790 4200 8860 4200
+Wire Wire Line
+	8860 4200 8860 4950
+Wire Wire Line
+	8860 4950 7900 4950
+Connection ~ 7900 4780
+Wire Wire Line
+	7710 4390 7710 5120
+Wire Wire Line
+	7710 4480 8290 4480
+Connection ~ 7710 4480
 $EndSCHEMATC
