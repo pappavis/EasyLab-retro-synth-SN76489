@@ -13,3 +13,4 @@ Egte versie<br/>
 ## EasyLab4Kids
 <img src="https://github.com/pappavis/EasyLab-retro-synth-SN76489/blob/master/KiCAD/SN76489%20arduino%20nano%20shield/plaatje/EasyLabSticker.png?raw=true" width="40%" height="40%">
 <br/>
+#s4kdenhaag
