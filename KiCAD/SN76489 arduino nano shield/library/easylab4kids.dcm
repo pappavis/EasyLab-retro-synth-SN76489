@@ -22,6 +22,10 @@ D 8 bits serial in // out Shift Register Open Collect.
 K HCMOS SR OpenCol
 $ENDCMP
 #
+$CMP LM358
+D LM 358 OpAmp
+$ENDCMP
+#
 $CMP SN76489
 D Musiek chip van BBC Micro
 K music

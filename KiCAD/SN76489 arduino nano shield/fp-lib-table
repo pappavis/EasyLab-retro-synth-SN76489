@@ -24,7 +24,6 @@
   (lib (name SN76489_shield)(type KiCad)(uri "$(KIPRJMOD)/SN76489_shield.pretty")(options "")(descr ""))
   (lib (name Connectors)(type KiCad)(uri "$(KISYSMOD)Connectors.pretty")(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri "$(KIPRJMOD)/footprints.pretty")(options "")(descr ""))
-  (lib (name lib_michiel)(type KiCad)(uri "B:/Dropbox en Onedrive/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/share/kicad/library/lib_michiel")(options "")(descr ""))
   (lib (name w_battery_holders)(type KiCad)(uri "$(KISYSMOD)/w_battery_holders.pretty")(options "")(descr ""))
   (lib (name w_conn_misc)(type KiCad)(uri "$(KISYSMOD)/w_conn_misc.pretty")(options "")(descr ""))
   (lib (name w_conn_mkds)(type KiCad)(uri "$(KISYSMOD)/w_conn_mkds.pretty")(options "")(descr ""))
@@ -46,4 +45,5 @@
   (lib (name w_switch)(type KiCad)(uri "$(KISYSMOD)/w_switch.pretty")(options "")(descr ""))
   (lib (name w_capacitors)(type Legacy)(uri "B:/Dropbox en Onedrive/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/share/kicad/modules/w_capacitors.mod")(options "")(descr ""))
   (lib (name w_conn_av)(type Legacy)(uri "B:/Dropbox en Onedrive/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/share/kicad/footprints/w_conn_av.mod")(options "")(descr ""))
+  (lib (name lib_michiel)(type KiCad)(uri "$(KIPRJMOD)/footprints/lib_michiel")(options "")(descr ""))
 )

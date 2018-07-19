@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ARDUINO_SHIELD_Michiel1
+D Arduino shield footprint (power outputs). Original by nicholasclewis
+K arduino
+F http://www.thingiverse.com/thing:9630
+$ENDCMP
+#
+#End Doc Library

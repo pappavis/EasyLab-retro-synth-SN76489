@@ -1,4 +1,4 @@
-update=25-6-2018 17:23:00
+update=19-7-2018 21:59:55
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=library;../../../../share/kicad/library/ander;../../../../share/kicad/library
+LibDir=library/lib_michiel
 [eeschema/libraries]
 LibName1=SN76849 Arduino nano shield-rescue
 LibName2=power
