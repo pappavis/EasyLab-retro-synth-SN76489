@@ -688,7 +688,7 @@ U 1 1 5B513BA6
 P 5430 4430
 F 0 "J2" H 5430 4630 50  0000 C CNN
 F 1 "audio_debug" H 5430 4230 30  0000 C CNN
-F 2 "" H 5430 4430 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 5430 4430 50  0001 C CNN
 F 3 "" H 5430 4430 50  0001 C CNN
 	1    5430 4430
 	-1   0    0    1   

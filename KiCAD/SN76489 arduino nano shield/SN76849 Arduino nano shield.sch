@@ -39,7 +39,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-07-10"
+Date "2018-07-19"
 Rev "20180710 0.7.03"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
