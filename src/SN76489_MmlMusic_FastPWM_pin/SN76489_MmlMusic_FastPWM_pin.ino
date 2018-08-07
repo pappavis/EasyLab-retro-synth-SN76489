@@ -1,5 +1,5 @@
 // SN76489 retro synth voorbeeld
-// versie: 20180807_1
+// versie: 20180807 0.7.05
 // dit voorbeeld gebruik die Arduino om 4 Mhz clock signaal te genereren.
 // sien afhanklikhede: https://github.com/maxint-rd?tab=repositories
 // Arduino pin 4 = NotWE
