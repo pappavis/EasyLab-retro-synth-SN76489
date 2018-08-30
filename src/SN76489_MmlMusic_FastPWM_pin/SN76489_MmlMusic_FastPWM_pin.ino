@@ -33,7 +33,7 @@
 //#include <mxUnified74HC595.h>   // use the 74HC595 shift-register
 #include <mxUnifiedSN76489.h>
 #include <MmlMusic.h>
-#include <FastPwmPin.h>
+// #include <FastPwmPin.h>
 
 #if defined(MXUNIFIED_ATTINY)
   // ATtiny85 has no regular hardware serial. You can use TinyDebugSerial (TX=3) or software serial
@@ -159,7 +159,7 @@ void setup()
   Serial.begin(115200);
   Serial.println(F("mxUnifiedSN76489 MML Music"));
 
-  FastPwmPin::enablePwmPin(CLK_IOport, 4000000L, 50);  // generate 4Mhz klok signaal
+ // FastPwmPin::enablePwmPin(CLK_IOport, 4000000L, 50);  // generate 4Mhz klok signaal
   
   // initialize the sound chip
   //unio.setBitOrder(LSBFIRST);   // reverse connections on 74HC595 (could also be done by changing wires)

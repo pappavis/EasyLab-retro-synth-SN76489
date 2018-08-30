@@ -39,12 +39,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2018-07-19"
-Rev "20180710 0.7.03"
+Date "2001-01-01"
+Rev "20180807 0.7.05"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"
-Comment3 "gebruik mxUnifiedSN76489 en Arduino  as clock"
+Comment3 "gebruik mxUnifiedSN76489"
 Comment4 "Geluidskaart vir Arduino met Sega Genisis geluidskaart"
 $EndDescr
 Text Label 5850 1210 0    32   ~ 0
@@ -124,17 +124,17 @@ P4
 Text Label 5110 1680 0    36   ~ 0
 P3
 Entry Wire Line
-	3450 2260 3550 2160
+	3450 2010 3550 1910
 Entry Wire Line
-	3450 2360 3550 2260
+	3450 2110 3550 2010
 Entry Wire Line
 	3450 1710 3550 1610
 Entry Wire Line
 	3450 1810 3550 1710
 Entry Wire Line
 	3450 1910 3550 1810
-Text Label 3180 2360 0    32   ~ 0
-WE
+Text Label 3180 2010 0    32   ~ 0
+~WE
 Text Label 5110 1380 0    36   ~ 0
 P0
 Entry Wire Line
@@ -175,7 +175,7 @@ L PCF8574 U1
 U 1 1 5A7F2E84
 P 4550 1780
 F 0 "U1" H 4200 2380 50  0000 L CNN
-F 1 "PCF8574" H 4650 2380 50  0000 L CNN
+F 1 "PCF8574" H 4580 2380 50  0000 L CNN
 F 2 "w_pth_circuits:dil_16-300_socket" H 4550 1780 50  0001 C CNN
 F 3 "" H 4550 1780 50  0001 C CNN
 	1    4550 1780
@@ -228,33 +228,20 @@ https://lowvoltage.wordpress.com/2011/05/21/lm358-mic-amp/
 Text Label 5670 4120 1    36   ~ 0
 Audio
 $Comp
-L GND #PWR01
+L GND #PWR1
 U 1 1 5A9BDD7A
 P 5740 1960
-F 0 "#PWR01" H 5740 1710 28  0001 C CNN
+F 0 "#PWR1" H 5740 1710 28  0001 C CNN
 F 1 "GND" V 5770 1970 34  0000 C CNN
 F 2 "" H 5740 1960 50  0000 C CNN
 F 3 "" H 5740 1960 50  0000 C CNN
 	1    5740 1960
 	1    0    0    -1  
 $EndComp
-$Comp
-L Conn_01x04 J4
-U 1 1 5B26CE55
-P 2800 1810
-F 0 "J4" H 2800 2010 50  0000 C CNN
-F 1 "I2C_in" H 2800 1510 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 2800 1810 50  0001 C CNN
-F 3 "" H 2800 1810 50  0001 C CNN
-	1    2800 1810
-	-1   0    0    1   
-$EndComp
 Entry Wire Line
 	3450 1610 3550 1510
 Text Label 3170 1610 0    28   ~ 0
 VSS
-Text Label 3180 2260 0    28   ~ 0
-Clock
 Text Notes 7410 3810 0    60   ~ 0
 OpAmp1
 $Comp
@@ -389,21 +376,77 @@ Wire Wire Line
 Wire Wire Line
 	7100 1710 7450 1710
 Wire Bus Line
-	7550 610  7550 2060
+	7550 610  7550 1210
+Wire Bus Line
+	7550 1210 7550 1310
+Wire Bus Line
+	7550 1310 7550 1410
+Wire Bus Line
+	7550 1410 7550 1510
+Wire Bus Line
+	7550 1510 7550 1610
+Wire Bus Line
+	7550 1610 7550 1710
+Wire Bus Line
+	7550 1710 7550 1810
+Wire Bus Line
+	7550 1810 7550 2060
 Wire Bus Line
 	5500 610  7550 610 
 Wire Wire Line
 	5650 1610 6050 1610
 Wire Wire Line
-	3650 2600 4550 2600
+	3650 2600 3850 2600
+Wire Wire Line
+	3850 2600 4550 2600
 Wire Wire Line
 	3650 1380 4050 1380
 Wire Bus Line
-	5400 630  5400 2180
+	5400 630  5400 650 
 Wire Bus Line
-	3550 780  3550 2530
+	5400 650  5400 940 
+Wire Bus Line
+	5400 940  5400 1280
+Wire Bus Line
+	5400 1280 5400 1380
+Wire Bus Line
+	5400 1380 5400 1480
+Wire Bus Line
+	5400 1480 5400 1580
+Wire Bus Line
+	5400 1580 5400 1680
+Wire Bus Line
+	5400 1680 5400 1780
+Wire Bus Line
+	5400 1780 5400 1880
+Wire Bus Line
+	5400 1880 5400 1980
+Wire Bus Line
+	5400 1980 5400 2180
+Wire Bus Line
+	3550 780  3550 1280
+Wire Bus Line
+	3550 1280 3550 1380
+Wire Bus Line
+	3550 1380 3550 1510
+Wire Bus Line
+	3550 1510 3550 1610
+Wire Bus Line
+	3550 1610 3550 1710
+Wire Bus Line
+	3550 1710 3550 1810
+Wire Bus Line
+	3550 1810 3550 2160
+Wire Bus Line
+	3550 2160 3550 2260
+Wire Bus Line
+	3550 2260 3550 2360
+Wire Bus Line
+	3550 2360 3550 2500
+Wire Bus Line
+	3550 2500 3550 2530
 Wire Wire Line
-	3000 2260 3450 2260
+	3000 2010 3450 2010
 Wire Wire Line
 	3450 1710 3000 1710
 Wire Wire Line
@@ -429,9 +472,13 @@ Wire Wire Line
 Wire Wire Line
 	5300 2080 5050 2080
 Wire Bus Line
-	3540 840  5280 840 
+	3540 840  4450 840 
 Wire Bus Line
-	5270 840  5360 840 
+	4450 840  5280 840 
+Wire Bus Line
+	5270 840  5300 840 
+Wire Bus Line
+	5300 840  5360 840 
 Wire Bus Line
 	5400 2170 5400 2360
 Wire Notes Line
@@ -461,14 +508,20 @@ Wire Wire Line
 	3850 1880 4050 1880
 Connection ~ 3850 1880
 Wire Wire Line
-	3850 1680 3850 2600
+	3850 1680 3850 1780
+Wire Wire Line
+	3850 1780 3850 1880
+Wire Wire Line
+	3850 1880 3850 2600
 Connection ~ 3850 2600
 Wire Notes Line
 	7560 5280 5740 5280
 Wire Wire Line
 	5600 1710 6050 1710
 Wire Wire Line
-	5950 3120 5950 5120
+	5950 3120 5950 4530
+Wire Wire Line
+	5950 4530 5950 5120
 Wire Wire Line
 	5600 2940 6390 2940
 Wire Wire Line
@@ -476,7 +529,11 @@ Wire Wire Line
 Wire Wire Line
 	5950 3120 5600 3120
 Wire Wire Line
-	5950 5120 7710 5120
+	5950 5120 6390 5120
+Wire Wire Line
+	6390 5120 7280 5120
+Wire Wire Line
+	7280 5120 7710 5120
 Wire Notes Line
 	5740 3700 7790 3700
 Wire Notes Line
@@ -490,8 +547,6 @@ Wire Notes Line
 Wire Notes Line
 	7490 5360 7490 5280
 Wire Wire Line
-	6190 4290 6060 4290
-Wire Wire Line
 	5630 4530 5950 4530
 Wire Notes Line
 	7370 3700 7370 3860
@@ -503,7 +558,13 @@ Wire Wire Line
 	7280 4930 7280 5120
 Connection ~ 7280 5120
 Wire Wire Line
-	7900 4120 7900 4950
+	7900 4120 7900 4580
+Wire Wire Line
+	7900 4580 7900 4680
+Wire Wire Line
+	7900 4680 7900 4780
+Wire Wire Line
+	7900 4780 7900 4950
 Wire Wire Line
 	7900 4580 8290 4580
 Wire Wire Line
@@ -513,13 +574,45 @@ Wire Wire Line
 	7900 4780 8290 4780
 Connection ~ 7900 4680
 Wire Wire Line
-	5670 3740 5670 4430
+	5670 3740 5670 3920
+Wire Wire Line
+	5670 3920 5670 4330
+Wire Wire Line
+	5670 4330 5670 4430
 Wire Bus Line
-	5500 610  5500 2650
+	5500 610  5500 750 
+Wire Bus Line
+	5500 750  5500 1210
+Wire Bus Line
+	5500 1210 5500 1310
+Wire Bus Line
+	5500 1310 5500 1410
+Wire Bus Line
+	5500 1410 5500 1610
+Wire Bus Line
+	5500 1610 5500 1810
+Wire Bus Line
+	5500 1810 5500 1910
+Wire Bus Line
+	5500 1910 5500 2190
+Wire Bus Line
+	5500 2190 5500 2290
+Wire Bus Line
+	5500 2290 5500 2390
+Wire Bus Line
+	5500 2390 5500 2490
+Wire Bus Line
+	5500 2490 5500 2650
 Wire Wire Line
 	5600 3740 5670 3740
 Wire Bus Line
-	5500 2630 5500 3940
+	5500 2630 5500 2840
+Wire Bus Line
+	5500 2840 5500 3020
+Wire Bus Line
+	5500 3020 5500 3640
+Wire Bus Line
+	5500 3640 5500 3940
 Wire Wire Line
 	5650 1610 5650 1810
 Connection ~ 5650 1810
@@ -527,7 +620,7 @@ Wire Wire Line
 	5740 1810 5740 1960
 Connection ~ 5740 1810
 Wire Wire Line
-	3000 2360 3450 2360
+	3000 2110 3450 2110
 Wire Wire Line
 	5600 1510 6050 1510
 Wire Wire Line
@@ -554,12 +647,12 @@ Wire Wire Line
 $Comp
 L R_Small R2
 U 1 1 5A9B7BDC
-P 6060 4390
-F 0 "R2" V 6110 4390 30  0000 L CNN
-F 1 "330" V 6060 4340 30  0000 L CNN
-F 2 "w_pth_resistors:RC03" H 6060 4390 50  0001 C CNN
-F 3 "" H 6060 4390 50  0000 C CNN
-	1    6060 4390
+P 6090 4610
+F 0 "R2" V 6140 4610 30  0000 L CNN
+F 1 "330" V 6090 4560 30  0000 L CNN
+F 2 "w_pth_resistors:RC03" H 6090 4610 50  0001 C CNN
+F 3 "" H 6090 4610 50  0000 C CNN
+	1    6090 4610
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -591,7 +684,13 @@ Wire Bus Line
 Wire Bus Line
 	4940 5690 5810 5690
 Wire Bus Line
-	5810 5690 5810 6570
+	5810 5690 5810 5730
+Wire Bus Line
+	5810 5730 5810 6080
+Wire Bus Line
+	5810 6080 5810 6540
+Wire Bus Line
+	5810 6540 5810 6570
 Entry Wire Line
 	5810 5730 5910 5630
 Wire Wire Line
@@ -603,7 +702,9 @@ Entry Wire Line
 Wire Wire Line
 	6400 5980 5910 5980
 Wire Wire Line
-	7000 6080 7160 6080
+	7000 6080 7050 6080
+Wire Wire Line
+	7050 6080 7160 6080
 Entry Wire Line
 	5810 6540 5910 6440
 Wire Wire Line
@@ -614,52 +715,38 @@ Text Label 6090 6440 0    36   ~ 0
 VSS
 Text Label 6060 5630 0    36   ~ 0
 VCC
-$Comp
-L Conn_01x03 J1
-U 1 1 5B4FCC6A
-P 2800 2360
-F 0 "J1" H 2800 2560 50  0000 C CNN
-F 1 "Arduino_in" H 2800 2160 38  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 2800 2360 50  0001 C CNN
-F 3 "" H 2800 2360 50  0001 C CNN
-	1    2800 2360
-	-1   0    0    1   
-$EndComp
-Entry Wire Line
-	3450 2460 3550 2360
-Wire Wire Line
-	3000 2460 3450 2460
-Text Label 3190 2460 0    32   ~ 0
+Text Label 3180 2110 0    32   ~ 0
 PWM
 Text Label 6070 5980 0    32   ~ 0
 PWM
 Wire Wire Line
-	5600 1810 6050 1810
+	5600 1810 5650 1810
+Wire Wire Line
+	5650 1810 5740 1810
+Wire Wire Line
+	5740 1810 6050 1810
 Wire Wire Line
 	7100 1110 7450 1110
 Wire Wire Line
 	6390 4690 6390 5120
-Wire Wire Line
-	6190 4490 6060 4490
 Wire Wire Line
 	5670 4430 5630 4430
 Connection ~ 5950 4530
 $Comp
 L R_Small R4
 U 1 1 5B510C1C
-P 6230 6080
-F 0 "R4" V 6280 6080 30  0000 L CNN
-F 1 "330" V 6230 6030 30  0000 L CNN
-F 2 "w_pth_resistors:RC03" H 6230 6080 50  0001 C CNN
-F 3 "" H 6230 6080 50  0000 C CNN
-	1    6230 6080
+P 6230 6280
+F 0 "R4" V 6280 6280 30  0000 L CNN
+F 1 "330" V 6230 6230 30  0000 L CNN
+F 2 "w_pth_resistors:RC03" H 6230 6280 50  0001 C CNN
+F 3 "" H 6230 6280 50  0000 C CNN
+	1    6230 6280
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6400 6180 6230 6180
 Wire Wire Line
 	6140 3920 6140 4290
-Connection ~ 6140 4290
 Wire Wire Line
 	6140 3920 5670 3920
 Connection ~ 5670 3920
@@ -675,7 +762,9 @@ F 3 "" H 7260 6080 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6790 4390 6890 4390
+	6790 4390 6840 4390
+Wire Wire Line
+	6840 4390 6890 4390
 Wire Wire Line
 	7360 6080 7360 5430
 Wire Wire Line
@@ -700,7 +789,11 @@ Connection ~ 6390 5120
 Wire Wire Line
 	7710 5120 7710 4480
 Wire Wire Line
-	7090 4390 7340 4390
+	7090 4390 7130 4390
+Wire Wire Line
+	7130 4390 7280 4390
+Wire Wire Line
+	7280 4390 7340 4390
 Connection ~ 7130 4390
 Wire Wire Line
 	7280 4450 7280 4390
@@ -710,4 +803,68 @@ Wire Wire Line
 Wire Wire Line
 	7490 4120 7900 4120
 NoConn ~ 7490 4540
+Wire Wire Line
+	6190 4490 6090 4490
+Wire Wire Line
+	6090 4490 6090 4510
+Wire Wire Line
+	6090 4710 6090 4730
+Wire Wire Line
+	6090 4730 6840 4730
+Wire Wire Line
+	6840 4730 6840 4390
+Connection ~ 6840 4390
+Wire Wire Line
+	6140 4290 6190 4290
+Wire Wire Line
+	6230 6380 6230 6410
+Wire Wire Line
+	6230 6410 7050 6410
+Wire Wire Line
+	7050 6410 7050 6080
+Connection ~ 7050 6080
+$Comp
+L Crystal Y1
+U 1 1 5B69193B
+P 8220 1220
+F 0 "Y1" H 8220 1370 50  0000 C CNN
+F 1 "4Mhz_Crystal" H 8220 1070 30  0000 C CNN
+F 2 "" H 8220 1220 50  0001 C CNN
+F 3 "" H 8220 1220 50  0001 C CNN
+	1    8220 1220
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5B691BA9
+P 8100 1700
+F 0 "C3" H 8125 1800 50  0000 L CNN
+F 1 "C_10uF" H 8125 1600 30  0000 L CNN
+F 2 "" H 8138 1550 50  0001 C CNN
+F 3 "" H 8100 1700 50  0001 C CNN
+	1    8100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5B691CB5
+P 8400 1700
+F 0 "C4" H 8425 1800 50  0000 L CNN
+F 1 "C_10uF" H 8425 1600 30  0000 L CNN
+F 2 "" H 8438 1550 50  0001 C CNN
+F 3 "" H 8400 1700 50  0001 C CNN
+	1    8400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J1
+U 1 1 5B6930F1
+P 2800 1910
+F 0 "J1" H 2800 2210 50  0000 C CNN
+F 1 "Arduino_in" H 2800 1510 38  0000 C CNN
+F 2 "" H 2800 1910 50  0001 C CNN
+F 3 "" H 2800 1910 50  0001 C CNN
+	1    2800 1910
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
