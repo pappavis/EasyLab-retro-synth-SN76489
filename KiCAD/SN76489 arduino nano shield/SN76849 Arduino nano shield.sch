@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:SN76849 Arduino nano shield-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:arduino
-LIBS:easylab4kids
-LIBS:trs_jack
+EESchema Schematic File Version 4
 LIBS:SN76849 Arduino nano shield-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -171,7 +138,7 @@ Text Notes 3980 3020 0    52   ~ 0
 PCF8574 I2C pin verbindinge
 NoConn ~ 6050 1410
 $Comp
-L PCF8574 U1
+L philips:PCF8574 U1
 U 1 1 5A7F2E84
 P 4550 1780
 F 0 "U1" H 4200 2380 50  0000 L CNN
@@ -198,7 +165,7 @@ VSS
 Text Label 5640 2940 0    36   ~ 0
 VCC
 $Comp
-L POT-RESCUE-SN76849_Arduino_nano_shield RV1
+L SN76849-Arduino-nano-shield-rescue:POT-RESCUE-SN76849_Arduino_nano_shield RV1
 U 1 1 5A96DB87
 P 7490 4390
 F 0 "RV1" H 7490 4310 38  0000 C CNN
@@ -213,7 +180,7 @@ SN76849 WE --> Arduino D8\nSN76489 CLOCK --> Arduino Nano D3\n
 Text Label 5850 1710 0    36   ~ 0
 Audio
 $Comp
-L SN76489 U3
+L easylab4kids:SN76489 U3
 U 1 1 5A902B70
 P 6600 1460
 F 0 "U3" H 6600 2010 60  0000 C CNN
@@ -228,7 +195,7 @@ https://lowvoltage.wordpress.com/2011/05/21/lm358-mic-amp/
 Text Label 5670 4120 1    36   ~ 0
 Audio
 $Comp
-L GND #PWR1
+L power:GND #PWR1
 U 1 1 5A9BDD7A
 P 5740 1960
 F 0 "#PWR1" H 5740 1710 28  0001 C CNN
@@ -245,7 +212,7 @@ VSS
 Text Notes 7410 3810 0    60   ~ 0
 OpAmp1
 $Comp
-L LED_Small D1
+L Device:LED_Small D1
 U 1 1 5B26D96D
 P 7280 4830
 F 0 "D1" H 7250 4940 30  0000 L CNN
@@ -256,7 +223,7 @@ F 3 "" V 7280 4830 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R3
+L Device:R_Small R3
 U 1 1 5B26DBB3
 P 7280 4550
 F 0 "R3" V 7330 4550 30  0000 L CNN
@@ -267,7 +234,7 @@ F 3 "" H 7280 4550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Conn_01x01 J5
+L conn:Conn_01x01 J5
 U 1 1 5B26F111
 P 780 1030
 F 0 "J5" H 780 1130 50  0000 C CNN
@@ -278,7 +245,7 @@ F 3 "" H 780 1030 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Conn_01x01 J6
+L conn:Conn_01x01 J6
 U 1 1 5B26F3ED
 P 1260 1010
 F 0 "J6" H 1260 1110 50  0000 C CNN
@@ -289,7 +256,7 @@ F 3 "" H 1260 1010 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Conn_01x01 J7
+L conn:Conn_01x01 J7
 U 1 1 5B26F4E1
 P 1260 1290
 F 0 "J7" H 1260 1390 50  0000 C CNN
@@ -300,7 +267,7 @@ F 3 "" H 1260 1290 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Audio-Jack-5 J8
+L conn:Audio-Jack-5 J8
 U 1 1 5B26D965
 P 8490 4680
 F 0 "J8" H 8440 4890 50  0000 C CNN
@@ -311,7 +278,7 @@ F 3 "" H 8740 4780 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CP1_Small C1
+L Device:CP1_Small C1
 U 1 1 5B26BD41
 P 6990 4390
 F 0 "C1" H 7000 4460 38  0000 L CNN
@@ -329,7 +296,7 @@ NoConn ~ 1460 1010
 NoConn ~ 1460 1290
 NoConn ~ 980  1030
 $Comp
-L Conn_01x04 J3
+L conn:Conn_01x04 J3
 U 1 1 5B43DC64
 P 6120 2390
 F 0 "J3" H 6120 2590 50  0000 C CNN
@@ -376,22 +343,6 @@ Wire Wire Line
 Wire Wire Line
 	7100 1710 7450 1710
 Wire Bus Line
-	7550 610  7550 1210
-Wire Bus Line
-	7550 1210 7550 1310
-Wire Bus Line
-	7550 1310 7550 1410
-Wire Bus Line
-	7550 1410 7550 1510
-Wire Bus Line
-	7550 1510 7550 1610
-Wire Bus Line
-	7550 1610 7550 1710
-Wire Bus Line
-	7550 1710 7550 1810
-Wire Bus Line
-	7550 1810 7550 2060
-Wire Bus Line
 	5500 610  7550 610 
 Wire Wire Line
 	5650 1610 6050 1610
@@ -401,50 +352,6 @@ Wire Wire Line
 	3850 2600 4550 2600
 Wire Wire Line
 	3650 1380 4050 1380
-Wire Bus Line
-	5400 630  5400 650 
-Wire Bus Line
-	5400 650  5400 940 
-Wire Bus Line
-	5400 940  5400 1280
-Wire Bus Line
-	5400 1280 5400 1380
-Wire Bus Line
-	5400 1380 5400 1480
-Wire Bus Line
-	5400 1480 5400 1580
-Wire Bus Line
-	5400 1580 5400 1680
-Wire Bus Line
-	5400 1680 5400 1780
-Wire Bus Line
-	5400 1780 5400 1880
-Wire Bus Line
-	5400 1880 5400 1980
-Wire Bus Line
-	5400 1980 5400 2180
-Wire Bus Line
-	3550 780  3550 1280
-Wire Bus Line
-	3550 1280 3550 1380
-Wire Bus Line
-	3550 1380 3550 1510
-Wire Bus Line
-	3550 1510 3550 1610
-Wire Bus Line
-	3550 1610 3550 1710
-Wire Bus Line
-	3550 1710 3550 1810
-Wire Bus Line
-	3550 1810 3550 2160
-Wire Bus Line
-	3550 2160 3550 2260
-Wire Bus Line
-	3550 2260 3550 2360
-Wire Bus Line
-	3550 2360 3550 2500
-Wire Bus Line
-	3550 2500 3550 2530
 Wire Wire Line
 	3000 2010 3450 2010
 Wire Wire Line
@@ -471,16 +378,6 @@ Wire Wire Line
 	5300 1880 5050 1880
 Wire Wire Line
 	5300 2080 5050 2080
-Wire Bus Line
-	3540 840  4450 840 
-Wire Bus Line
-	4450 840  5280 840 
-Wire Bus Line
-	5270 840  5300 840 
-Wire Bus Line
-	5300 840  5360 840 
-Wire Bus Line
-	5400 2170 5400 2360
 Wire Notes Line
 	3930 2910 5350 2910
 Wire Notes Line
@@ -514,8 +411,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 1880 3850 2600
 Connection ~ 3850 2600
-Wire Notes Line
-	7560 5280 5740 5280
 Wire Wire Line
 	5600 1710 6050 1710
 Wire Wire Line
@@ -538,8 +433,6 @@ Wire Notes Line
 	5740 3700 7790 3700
 Wire Notes Line
 	7790 3700 7790 5280
-Wire Notes Line
-	7790 5280 7550 5280
 Wire Notes Line
 	5740 3700 5740 5360
 Wire Notes Line
@@ -579,40 +472,8 @@ Wire Wire Line
 	5670 3920 5670 4330
 Wire Wire Line
 	5670 4330 5670 4430
-Wire Bus Line
-	5500 610  5500 750 
-Wire Bus Line
-	5500 750  5500 1210
-Wire Bus Line
-	5500 1210 5500 1310
-Wire Bus Line
-	5500 1310 5500 1410
-Wire Bus Line
-	5500 1410 5500 1610
-Wire Bus Line
-	5500 1610 5500 1810
-Wire Bus Line
-	5500 1810 5500 1910
-Wire Bus Line
-	5500 1910 5500 2190
-Wire Bus Line
-	5500 2190 5500 2290
-Wire Bus Line
-	5500 2290 5500 2390
-Wire Bus Line
-	5500 2390 5500 2490
-Wire Bus Line
-	5500 2490 5500 2650
 Wire Wire Line
 	5600 3740 5670 3740
-Wire Bus Line
-	5500 2630 5500 2840
-Wire Bus Line
-	5500 2840 5500 3020
-Wire Bus Line
-	5500 3020 5500 3640
-Wire Bus Line
-	5500 3640 5500 3940
 Wire Wire Line
 	5650 1610 5650 1810
 Connection ~ 5650 1810
@@ -645,7 +506,7 @@ Wire Wire Line
 Wire Wire Line
 	5920 2590 5600 2590
 $Comp
-L R_Small R2
+L Device:R_Small R2
 U 1 1 5A9B7BDC
 P 6090 4610
 F 0 "R2" V 6140 4610 30  0000 L CNN
@@ -656,7 +517,7 @@ F 3 "" H 6090 4610 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LM358 U2
+L linear:LM358 U2
 U 1 1 5B4FA1EF
 P 6490 4390
 F 0 "U2" H 6490 4590 50  0000 L CNN
@@ -667,7 +528,7 @@ F 3 "" H 6490 4390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM358 U2
+L linear:LM358 U2
 U 2 1 5B4FA234
 P 6700 6080
 F 0 "U2" H 6700 6230 50  0000 L CNN
@@ -683,14 +544,6 @@ Wire Bus Line
 	4940 3940 4940 5690
 Wire Bus Line
 	4940 5690 5810 5690
-Wire Bus Line
-	5810 5690 5810 5730
-Wire Bus Line
-	5810 5730 5810 6080
-Wire Bus Line
-	5810 6080 5810 6540
-Wire Bus Line
-	5810 6540 5810 6570
 Entry Wire Line
 	5810 5730 5910 5630
 Wire Wire Line
@@ -733,7 +586,7 @@ Wire Wire Line
 	5670 4430 5630 4430
 Connection ~ 5950 4530
 $Comp
-L R_Small R4
+L Device:R_Small R4
 U 1 1 5B510C1C
 P 6230 6280
 F 0 "R4" V 6280 6280 30  0000 L CNN
@@ -751,7 +604,7 @@ Wire Wire Line
 	6140 3920 5670 3920
 Connection ~ 5670 3920
 $Comp
-L CP1_Small C2
+L Device:CP1_Small C2
 U 1 1 5B51233C
 P 7260 6080
 F 0 "C2" H 7270 6150 38  0000 L CNN
@@ -772,7 +625,7 @@ Wire Wire Line
 Wire Wire Line
 	7130 5430 7130 4390
 $Comp
-L Conn_01x03 J2
+L conn:Conn_01x03 J2
 U 1 1 5B513BA6
 P 5430 4430
 F 0 "J2" H 5430 4630 50  0000 C CNN
@@ -824,7 +677,7 @@ Wire Wire Line
 	7050 6410 7050 6080
 Connection ~ 7050 6080
 $Comp
-L Crystal Y1
+L Device:Crystal Y1
 U 1 1 5B69193B
 P 8220 1220
 F 0 "Y1" H 8220 1370 50  0000 C CNN
@@ -835,7 +688,7 @@ F 3 "" H 8220 1220 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5B691BA9
 P 8100 1700
 F 0 "C3" H 8125 1800 50  0000 L CNN
@@ -846,7 +699,7 @@ F 3 "" H 8100 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 5B691CB5
 P 8400 1700
 F 0 "C4" H 8425 1800 50  0000 L CNN
@@ -857,7 +710,7 @@ F 3 "" H 8400 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x06 J1
+L conn:Conn_01x06 J1
 U 1 1 5B6930F1
 P 2800 1910
 F 0 "J1" H 2800 2210 50  0000 C CNN
@@ -867,4 +720,18 @@ F 3 "" H 2800 1910 50  0001 C CNN
 	1    2800 1910
 	-1   0    0    1   
 $EndComp
+Wire Notes Line
+	5740 5280 7790 5280
+Wire Bus Line
+	3540 840  5360 840 
+Wire Bus Line
+	5810 5690 5810 6570
+Wire Bus Line
+	7550 610  7550 2060
+Wire Bus Line
+	5400 630  5400 2360
+Wire Bus Line
+	3550 780  3550 2530
+Wire Bus Line
+	5500 610  5500 3940
 $EndSCHEMATC
