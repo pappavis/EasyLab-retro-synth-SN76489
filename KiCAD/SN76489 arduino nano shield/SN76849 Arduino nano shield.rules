@@ -1,0 +1,96 @@
+
+(rules PCB SN76849 Arduino nano shield
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 618)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 750.0)
+    (clear 450.2)
+    (clear 375.0 (type smd_to_turn_gap))
+    (clear 112.6 (type smd_smd))
+    (clear 300.2 (type "DityPCBs laat maak"_"DityPCBs laat maak"))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-DityPCBs laat maak" "Via[0-1]_600:400_um" "DityPCBs laat maak"
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (via_rule
+    "DityPCBs laat maak" "Via[0-1]_600:400_um-DityPCBs laat maak"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 750.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /Audio "Net-(C1-Pad2)" "Net-(D1-Pad1)" GND /VCC /SCL /SDA "Net-(J8-Pad2)"
+    /P0 /P1 /P2 /P3 /P4 /P5 /P6 /P7
+    /~WE "Net-(RV1-Pad1)" "Net-(U1-Pad13)" /Clock "Net-(U3-Pad9)" "Net-(U3-Pad4)" "Net-(J6-Pad1)" "Net-(J7-Pad1)"
+    "Net-(X1-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 750.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "DityPCBs laat maak"
+    (clearance_class "DityPCBs laat maak")
+    (via_rule DityPCBs laat maak)
+    (rule
+      (width 350.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

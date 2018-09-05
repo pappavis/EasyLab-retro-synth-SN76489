@@ -1,122 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>B:/Dropbox en Onedrive/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/github/EasyLab-retro-synth-SN76489/KiCAD/SN76489 arduino nano shield/SN76849 Arduino nano shield.sch</source>
-    <date>2-6-2018 15:50:04</date>
-    <tool>Eeschema 4.0.7</tool>
+    <source>B:\Dropbox en Onedrive\Dropbox (Persoonlijk)\michiele\Aruino\PCB Ontwerp\KiCAD\github\EasyLab-retro-synth-SN76489\KiCAD\SN76489 arduino nano shield\SN76849 Arduino nano shield.sch</source>
+    <date>5-9-2018 18:45:46</date>
+    <tool>Eeschema (5.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>SN76489 geluid shield vir Arduino Nano</title>
         <company>EasyLab4Kids</company>
-        <rev>20180601 0.5</rev>
-        <date>2018-05-16</date>
+        <rev>20180905 0.7.06</rev>
+        <date>2018-09-05</date>
         <source>SN76849 Arduino nano shield.sch</source>
         <comment number="1" value="Ontwerp: Michiel Erasmus"/>
         <comment number="2" value="Webwerf: https://www.facebook.com/EasyBlocks4Kids/"/>
-        <comment number="3" value="gebruik mxUnifiedSN76489 en Arduino  as clock"/>
+        <comment number="3" value="gebruik mxUnifiedSN76489"/>
         <comment number="4" value="Geluidskaart vir Arduino met Sega Genisis geluidskaart"/>
       </title_block>
     </sheet>
   </design>
   <components>
-    <comp ref="P1">
-      <value>Audio_uit</value>
-      <footprint>Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm</footprint>
-      <libsource lib="easylab4kids" part="CONN_01X03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A6AC6F8</tstamp>
-    </comp>
-    <comp ref="J1">
-      <value>Arduino_sn</value>
-      <footprint>Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_01x03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A72FDF5</tstamp>
-    </comp>
     <comp ref="U1">
       <value>PCF8574</value>
       <footprint>w_pth_circuits:dil_16-300_socket</footprint>
-      <libsource lib="philips" part="PCF8574"/>
+      <libsource lib="philips" part="PCF8574" description="8 Bit Port/Expander to I2C Bus, DIP/SOIC-16"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A7F2E84</tstamp>
-    </comp>
-    <comp ref="C3">
-      <value>CP_220uF</value>
-      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P2.50mm</footprint>
-      <libsource lib="device" part="CP1_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A7F5319</tstamp>
     </comp>
     <comp ref="RV1">
       <value>POT_50k</value>
       <footprint>w_pth_resistors:trimmer_ecp_ca9-v10</footprint>
-      <libsource lib="SN76849 Arduino nano shield-rescue" part="POT-RESCUE-SN76849_Arduino_nano_shield"/>
+      <libsource lib="SN76849-Arduino-nano-shield-rescue" part="POT-RESCUE-SN76849_Arduino_nano_shield" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A96DB87</tstamp>
-    </comp>
-    <comp ref="P3">
-      <value>I2C</value>
-      <footprint>Socket_Strips:Socket_Strip_Angled_1x03_Pitch2.54mm</footprint>
-      <libsource lib="easylab4kids" part="CONN_01X03"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A977E81</tstamp>
-    </comp>
-    <comp ref="U2">
-      <value>LM358</value>
-      <footprint>w_pth_circuits:dil_8-300_socket</footprint>
-      <libsource lib="linear" part="LM358"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A9B1A8C</tstamp>
-    </comp>
-    <comp ref="R2">
-      <value>R1k</value>
-      <footprint>w_pth_resistors:RC03</footprint>
-      <libsource lib="device" part="R_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A9B7BDC</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>CP_10uF</value>
-      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P2.50mm</footprint>
-      <libsource lib="device" part="CP1_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5A9B9E55</tstamp>
     </comp>
     <comp ref="U3">
       <value>SN76489</value>
       <footprint>w_pth_circuits:dil_16-300_socket</footprint>
-      <libsource lib="easylab4kids" part="SN76489"/>
+      <libsource lib="easylab4kids" part="SN76489" description="Musiek chip van BBC Micro"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A902B70</tstamp>
     </comp>
+    <comp ref="D1">
+      <value>Liggie</value>
+      <footprint>LEDs:LED_D3.0mm</footprint>
+      <libsource lib="Device" part="LED_Small" description="LED, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26D96D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R1k</value>
+      <footprint>w_pth_resistors:RC03</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26DBB3</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>LOGO</value>
+      <footprint>lib_michiel:Sovjet_simpits_logo01</footprint>
+      <libsource lib="conn" part="Conn_01x01" description="Generic connector, single row, 01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26F111</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>gat1</value>
+      <footprint>Mounting_Holes:MountingHole_2.5mm_Pad</footprint>
+      <libsource lib="conn" part="Conn_01x01" description="Generic connector, single row, 01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26F3ED</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>gat2</value>
+      <footprint>Mounting_Holes:MountingHole_2.5mm_Pad</footprint>
+      <libsource lib="conn" part="Conn_01x01" description="Generic connector, single row, 01x01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26F4E1</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>geluid_uit</value>
+      <footprint>lib_michiel:3.5mm_stereo_TRS_jack_A-853_Tayda_</footprint>
+      <libsource lib="conn" part="Audio-Jack-5" description="5-pin (audio) jack receptable (TRRRS connector)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26D965</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>CP_220uF</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P2.50mm</footprint>
+      <libsource lib="Device" part="CP1_Small" description="Polarised capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B26BD41</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>OLED_wit</value>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04" description="Generic connector, single row, 01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B43DC64</tstamp>
+    </comp>
     <comp ref="J2">
       <value>audio_debug</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_01x02"/>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x03" description="Generic connector, single row, 01x03"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5AEF7BF4</tstamp>
+      <tstamp>5B513BA6</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>CLK_DIP14_4Mhz</value>
+      <footprint>Oscillator:Oscillator_DIP-14</footprint>
+      <datasheet>http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf</datasheet>
+      <libsource lib="Oscillator" part="CXO_DIP14" description="Crystal Clock Oscillator, DIP14-style metal package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9072D5</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Arduino_in</value>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="conn" part="Conn_01x05" description="Generic connector, single row, 01x05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B92749F</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="easylab4kids" part="CONN_01X03">
-      <footprints>
-        <fp>Pin_Header_Straight_1X03</fp>
-        <fp>Pin_Header_Angled_1X03</fp>
-        <fp>Socket_Strip_Straight_1X03</fp>
-        <fp>Socket_Strip_Angled_1X03</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="CP1_Small">
+    <libpart lib="Device" part="CP1_Small">
       <description>Polarised capacitor</description>
+      <docs>~</docs>
       <footprints>
         <fp>CP_*</fp>
       </footprints>
@@ -129,8 +136,88 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="Conn_01x02">
-      <description>Generic connector, single row, 01x02</description>
+    <libpart lib="Device" part="LED_Small">
+      <description>LED, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Oscillator" part="CXO_DIP14">
+      <aliases>
+        <alias>TFT680</alias>
+        <alias>GTXO-14T</alias>
+      </aliases>
+      <description>Crystal Clock Oscillator, DIP14-style metal package</description>
+      <docs>http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf</docs>
+      <footprints>
+        <fp>Oscillator*DIP*14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">CXO_DIP14</field>
+        <field name="Footprint">Oscillator:Oscillator_DIP-14</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="OUT" type="output"/>
+        <pin num="14" name="Vcc" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SN76849-Arduino-nano-shield-rescue" part="POT-RESCUE-SN76849_Arduino_nano_shield">
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT-RESCUE-SN76849_Arduino_nano_shield</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Audio-Jack-5">
+      <description>5-pin (audio) jack receptable (TRRRS connector)</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Audio-Jack-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_??x*mm*</fp>
@@ -142,11 +229,10 @@
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x02</field>
+        <field name="Value">Conn_01x01</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="Conn_01x03">
@@ -170,87 +256,75 @@
         <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="linear" part="LM2904">
-      <aliases>
-        <alias>LM358</alias>
-        <alias>AD8620</alias>
-        <alias>LMC6062</alias>
-        <alias>LMC6082</alias>
-        <alias>TL062</alias>
-        <alias>TL072</alias>
-        <alias>TL082</alias>
-        <alias>NE5532</alias>
-        <alias>SA5532</alias>
-        <alias>RC4558</alias>
-        <alias>RC4560</alias>
-        <alias>RC4580</alias>
-        <alias>LMV358</alias>
-        <alias>TS912</alias>
-        <alias>TSV912IDT</alias>
-        <alias>TSV912IST</alias>
-        <alias>TLC272</alias>
-        <alias>TLC277</alias>
-        <alias>MCP602</alias>
-        <alias>OPA2134</alias>
-        <alias>OPA2340</alias>
-        <alias>OPA2376xxD</alias>
-        <alias>OPA2376xxDGK</alias>
-        <alias>MC33078</alias>
-        <alias>MC33178</alias>
-        <alias>LM4562</alias>
-        <alias>OP249</alias>
-        <alias>OP275</alias>
-        <alias>ADA4075-2</alias>
-        <alias>MCP6002-xP</alias>
-        <alias>MCP6002-xSN</alias>
-        <alias>MCP6002-xMS</alias>
-        <alias>LM7332</alias>
-        <alias>OPA2333xxD</alias>
-        <alias>OPA2333xxDGK</alias>
-        <alias>LMC6482</alias>
-        <alias>LT1492</alias>
-        <alias>LTC6081xMS8</alias>
-        <alias>LM6172</alias>
-        <alias>MCP6L92</alias>
-        <alias>NJM2043</alias>
-        <alias>NJM2114</alias>
-        <alias>NJM4556A</alias>
-        <alias>NJM4558</alias>
-        <alias>NJM4559</alias>
-        <alias>NJM4560</alias>
-        <alias>NJM4580</alias>
-        <alias>NJM5532</alias>
-        <alias>ADA4807-2ARM</alias>
-        <alias>OPA2691</alias>
-      </aliases>
-      <description>Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8</description>
-      <docs>http://www.ti.com/lit/ds/symlink/lm358.pdf</docs>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
       <footprints>
-        <fp>SOIC*3.9x4.9mm*Pitch1.27mm*</fp>
-        <fp>DIP*W7.62mm*</fp>
-        <fp>TO*99*</fp>
-        <fp>OnSemi*Micro8*</fp>
-        <fp>TSSOP*3x3mm*Pitch0.65mm*</fp>
-        <fp>TSSOP*4.4x3mm*Pitch0.65mm*</fp>
-        <fp>MSOP*3x3mm*Pitch0.65mm*</fp>
-        <fp>SSOP*3.9x4.9mm*Pitch0.635mm*</fp>
-        <fp>LFCSP*2x2mm*Pitch0.5mm*</fp>
-        <fp>*SIP*</fp>
-        <fp>SOIC*5.3x6.2mm*Pitch1.27mm*</fp>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
       </footprints>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM2904</field>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="output"/>
-        <pin num="2" name="-" type="input"/>
-        <pin num="3" name="+" type="input"/>
-        <pin num="4" name="V-" type="power_in"/>
-        <pin num="5" name="+" type="input"/>
-        <pin num="6" name="-" type="input"/>
-        <pin num="7" name="~" type="output"/>
-        <pin num="8" name="V+" type="power_in"/>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="easylab4kids" part="SN76489">
+      <description>Musiek chip van BBC Micro</description>
+      <docs>https://www.arduino.cc/en/Tutorial/ShiftOut</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN76489</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D2" type="input"/>
+        <pin num="2" name="D1" type="input"/>
+        <pin num="3" name="D0" type="output"/>
+        <pin num="4" name="READY" type="power_out"/>
+        <pin num="5" name="~WE" type="power_in"/>
+        <pin num="6" name="~OE" type="power_in"/>
+        <pin num="7" name="AUDIO_OUT" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="N.C." type="NotConnected"/>
+        <pin num="10" name="D7" type="input"/>
+        <pin num="11" name="D6" type="input"/>
+        <pin num="12" name="D5" type="input"/>
+        <pin num="13" name="D4" type="input"/>
+        <pin num="14" name="CLOCK" type="input"/>
+        <pin num="15" name="D3" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="philips" part="PCF8574">
@@ -288,181 +362,144 @@
         <pin num="16" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="SN76849 Arduino nano shield-rescue" part="POT-RESCUE-SN76849_Arduino_nano_shield">
-      <fields>
-        <field name="Reference">RV</field>
-        <field name="Value">POT-RESCUE-SN76849_Arduino_nano_shield</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="R_Small">
-      <description>Resistor, small symbol</description>
-      <footprints>
-        <fp>R_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R_Small</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="easylab4kids" part="SN76489">
-      <description>Musiek chip van BBC Micro</description>
-      <docs>https://www.arduino.cc/en/Tutorial/ShiftOut</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">SN76489</field>
-      </fields>
-      <pins>
-        <pin num="1" name="D2" type="input"/>
-        <pin num="2" name="D1" type="input"/>
-        <pin num="3" name="D0" type="output"/>
-        <pin num="4" name="READY" type="power_out"/>
-        <pin num="5" name="~WE" type="power_in"/>
-        <pin num="6" name="~OE" type="power_in"/>
-        <pin num="7" name="AUDIO_OUT" type="input"/>
-        <pin num="8" name="GND" type="power_in"/>
-        <pin num="9" name="N.C." type="NotConnected"/>
-        <pin num="10" name="D7" type="input"/>
-        <pin num="11" name="D6" type="input"/>
-        <pin num="12" name="D5" type="input"/>
-        <pin num="13" name="D4" type="input"/>
-        <pin num="14" name="CLOCK" type="input"/>
-        <pin num="15" name="D3" type="input"/>
-        <pin num="16" name="VCC" type="power_in"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Oscillator">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Oscillator.lib</uri>
+    </library>
+    <library logical="SN76849-Arduino-nano-shield-rescue">
+      <uri>B:\Dropbox en Onedrive\Dropbox (Persoonlijk)\michiele\Aruino\PCB Ontwerp\KiCAD\github\EasyLab-retro-synth-SN76489\KiCAD\SN76489 arduino nano shield/SN76849 Arduino nano shield-rescue.lib</uri>
+    </library>
     <library logical="conn">
-      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
-    </library>
-    <library logical="linear">
-      <uri>C:\Program Files\KiCad\share\kicad\library\linear.lib</uri>
-    </library>
-    <library logical="SN76849 Arduino nano shield-rescue">
-      <uri>B:\Dropbox en Onedrive\Dropbox (Persoonlijk)\michiele\Aruino\PCB Ontwerp\KiCAD\github\EasyLab-retro-synth-SN76489\KiCAD\SN76489 arduino nano shield\SN76849 Arduino nano shield-rescue.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
-    </library>
-    <library logical="philips">
-      <uri>C:\Program Files\KiCad\share\kicad\library\philips.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/conn.lib</uri>
     </library>
     <library logical="easylab4kids">
-      <uri>B:\Dropbox en Onedrive\Dropbox (Persoonlijk)\michiele\Aruino\PCB Ontwerp\KiCAD\github\EasyLab-retro-synth-SN76489\KiCAD\SN76489 arduino nano shield\library\easylab4kids.lib</uri>
+      <uri>B:\Dropbox en Onedrive\Dropbox (Persoonlijk)\michiele\Aruino\PCB Ontwerp\KiCAD\github\EasyLab-retro-synth-SN76489\KiCAD\SN76489 arduino nano shield/library/easylab4kids.lib</uri>
+    </library>
+    <library logical="philips">
+      <uri>C:\Program Files\KiCad\share\kicad\library/philips.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(P1-Pad1)">
-      <node ref="P1" pin="1"/>
-      <node ref="RV1" pin="2"/>
-      <node ref="P1" pin="2"/>
+    <net code="1" name="Net-(D1-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="D1" pin="1"/>
     </net>
-    <net code="2" name="/Audio">
-      <node ref="C2" pin="1"/>
-      <node ref="U3" pin="7"/>
-    </net>
-    <net code="3" name="Net-(C2-Pad2)">
-      <node ref="J2" pin="1"/>
-      <node ref="R2" pin="2"/>
-      <node ref="C2" pin="2"/>
-    </net>
-    <net code="4" name="Net-(R2-Pad1)">
-      <node ref="U2" pin="2"/>
-      <node ref="R2" pin="1"/>
-    </net>
-    <net code="5" name="Net-(C3-Pad2)">
-      <node ref="RV1" pin="1"/>
-      <node ref="C3" pin="2"/>
-    </net>
-    <net code="6" name="Net-(C3-Pad1)">
-      <node ref="C3" pin="1"/>
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="7" name="/P6">
-      <node ref="U1" pin="11"/>
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="8" name="/SCL">
-      <node ref="U1" pin="14"/>
-      <node ref="P3" pin="2"/>
-    </net>
-    <net code="9" name="/VCC">
-      <node ref="P3" pin="3"/>
-      <node ref="U2" pin="8"/>
-      <node ref="J1" pin="1"/>
-      <node ref="U3" pin="16"/>
+    <net code="2" name="/VCC">
+      <node ref="X1" pin="14"/>
       <node ref="U1" pin="16"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="U3" pin="16"/>
     </net>
-    <net code="10" name="/SDA">
-      <node ref="P3" pin="1"/>
-      <node ref="U1" pin="15"/>
-    </net>
-    <net code="11" name="Net-(U3-Pad4)">
-      <node ref="U3" pin="4"/>
-    </net>
-    <net code="12" name="/P1">
-      <node ref="U1" pin="5"/>
-      <node ref="U3" pin="11"/>
-    </net>
-    <net code="13" name="/P5">
-      <node ref="U1" pin="10"/>
-      <node ref="U3" pin="1"/>
-    </net>
-    <net code="14" name="/P7">
-      <node ref="U3" pin="3"/>
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="15" name="/WE">
-      <node ref="J1" pin="2"/>
-      <node ref="U3" pin="5"/>
-    </net>
-    <net code="16" name="/P4">
-      <node ref="U1" pin="9"/>
-      <node ref="U3" pin="15"/>
-    </net>
-    <net code="17" name="/Clock">
-      <node ref="U3" pin="14"/>
-      <node ref="J1" pin="3"/>
-    </net>
-    <net code="18" name="/P3">
-      <node ref="U1" pin="7"/>
-      <node ref="U3" pin="13"/>
-    </net>
-    <net code="19" name="/P2">
-      <node ref="U1" pin="6"/>
-      <node ref="U3" pin="12"/>
-    </net>
-    <net code="20" name="/P0">
-      <node ref="U1" pin="4"/>
-      <node ref="U3" pin="10"/>
-    </net>
-    <net code="21" name="Net-(U3-Pad9)">
-      <node ref="U3" pin="9"/>
-    </net>
-    <net code="22" name="Net-(U1-Pad13)">
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="23" name="GND">
-      <node ref="P1" pin="3"/>
-      <node ref="U3" pin="8"/>
-      <node ref="U3" pin="6"/>
-      <node ref="U2" pin="4"/>
-      <node ref="RV1" pin="3"/>
-      <node ref="U2" pin="3"/>
-      <node ref="J2" pin="2"/>
+    <net code="3" name="GND">
+      <node ref="J1" pin="5"/>
+      <node ref="X1" pin="7"/>
+      <node ref="J2" pin="1"/>
       <node ref="U1" pin="8"/>
       <node ref="U1" pin="3"/>
       <node ref="U1" pin="2"/>
       <node ref="U1" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="8"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="4" name="Net-(X1-Pad1)">
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(C1-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="RV1" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(J8-Pad2)">
+      <node ref="J8" pin="3"/>
+      <node ref="J8" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J8" pin="5"/>
+    </net>
+    <net code="7" name="Net-(RV1-Pad1)">
+      <node ref="RV1" pin="1"/>
+    </net>
+    <net code="8" name="/Clock">
+      <node ref="X1" pin="8"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="10" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="11" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="12" name="/SDA">
+      <node ref="J1" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="13" name="/Audio">
+      <node ref="U3" pin="7"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="14" name="/P2">
+      <node ref="U1" pin="6"/>
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="15" name="/P5">
+      <node ref="U1" pin="10"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="16" name="/P7">
+      <node ref="U1" pin="12"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="17" name="/~WE">
+      <node ref="U3" pin="5"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="18" name="/P4">
+      <node ref="U1" pin="9"/>
+      <node ref="U3" pin="15"/>
+    </net>
+    <net code="19" name="/P3">
+      <node ref="U1" pin="7"/>
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="20" name="/P1">
+      <node ref="U1" pin="5"/>
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="21" name="/P0">
+      <node ref="U1" pin="4"/>
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="22" name="/P6">
+      <node ref="U1" pin="11"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="23" name="/SCL">
+      <node ref="U1" pin="14"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="24" name="Net-(J6-Pad1)">
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="25" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="26" name="Net-(J5-Pad1)">
+      <node ref="J5" pin="1"/>
     </net>
   </nets>
 </export>

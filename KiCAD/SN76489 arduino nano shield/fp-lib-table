@@ -46,4 +46,5 @@
   (lib (name w_capacitors)(type Legacy)(uri "B:/Dropbox en Onedrive/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/share/kicad/modules/w_capacitors.mod")(options "")(descr ""))
   (lib (name w_conn_av)(type Legacy)(uri "B:/Dropbox en Onedrive/Dropbox (Persoonlijk)/michiele/Aruino/PCB Ontwerp/KiCAD/share/kicad/footprints/w_conn_av.mod")(options "")(descr ""))
   (lib (name lib_michiel)(type KiCad)(uri "$(KIPRJMOD)/footprints/lib_michiel")(options "")(descr ""))
+  (lib (name f_r_xtal)(type KiCad)(uri "$(KIPRJMOD)/footprints/r_osc_dip14.mod")(options "")(descr ""))
 )

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SN76489 geluid shield vir Arduino Nano"
-Date "2001-01-01"
-Rev "20180807 0.7.05"
+Date "2018-09-05"
+Rev "20180905 0.7.06"
 Comp "EasyLab4Kids"
 Comment1 "Ontwerp: Michiel Erasmus"
 Comment2 "Webwerf: https://www.facebook.com/EasyBlocks4Kids/"
@@ -21,7 +21,7 @@ P5
 Text Label 5850 1310 0    32   ~ 0
 P7
 Text Label 5850 1510 0    32   ~ 0
-WE
+~WE
 Text Label 5850 1810 0    36   ~ 0
 VSS
 Text Label 7150 1210 0    36   ~ 0
@@ -93,8 +93,6 @@ P3
 Entry Wire Line
 	3450 2010 3550 1910
 Entry Wire Line
-	3450 2110 3550 2010
-Entry Wire Line
 	3450 1710 3550 1610
 Entry Wire Line
 	3450 1810 3550 1710
@@ -157,20 +155,16 @@ Entry Wire Line
 Text Label 4550 1070 1    36   ~ 0
 VCC
 Entry Wire Line
-	5500 2840 5600 2940
-Entry Wire Line
 	5500 1810 5600 1710
 Text Label 5750 3120 2    36   ~ 0
 VSS
-Text Label 5640 2940 0    36   ~ 0
-VCC
 $Comp
 L SN76849-Arduino-nano-shield-rescue:POT-RESCUE-SN76849_Arduino_nano_shield RV1
 U 1 1 5A96DB87
 P 7490 4390
 F 0 "RV1" H 7490 4310 38  0000 C CNN
 F 1 "POT_50k" H 7490 4390 30  0000 C CNN
-F 2 "w_pth_resistors:trimmer_ecp_ca9-v10" H 7490 4390 50  0001 C CNN
+F 2 "w_pth_resistors:trimmer_ecp_ca9-h2,5" H 7490 4390 50  0001 C CNN
 F 3 "" H 7490 4390 50  0000 C CNN
 	1    7490 4390
 	0    -1   -1   0   
@@ -190,15 +184,13 @@ F 3 "" H 6600 1160 60  0001 C CNN
 	1    6600 1460
 	1    0    0    -1  
 $EndComp
-Text Notes 5770 5350 0    32   ~ 0
-https://lowvoltage.wordpress.com/2011/05/21/lm358-mic-amp/
-Text Label 5670 4120 1    36   ~ 0
+Text Label 5780 3740 2    36   ~ 0
 Audio
 $Comp
-L power:GND #PWR1
+L power:GND #PWR01
 U 1 1 5A9BDD7A
 P 5740 1960
-F 0 "#PWR1" H 5740 1710 28  0001 C CNN
+F 0 "#PWR01" H 5740 1710 28  0001 C CNN
 F 1 "GND" V 5770 1970 34  0000 C CNN
 F 2 "" H 5740 1960 50  0000 C CNN
 F 3 "" H 5740 1960 50  0000 C CNN
@@ -209,8 +201,6 @@ Entry Wire Line
 	3450 1610 3550 1510
 Text Label 3170 1610 0    28   ~ 0
 VSS
-Text Notes 7410 3810 0    60   ~ 0
-OpAmp1
 $Comp
 L Device:LED_Small D1
 U 1 1 5B26D96D
@@ -283,7 +273,7 @@ U 1 1 5B26BD41
 P 6990 4390
 F 0 "C1" H 7000 4460 38  0000 L CNN
 F 1 "CP_220uF" V 6890 4300 30  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 6990 4390 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P3.50mm" H 6990 4390 50  0001 C CNN
 F 3 "" H 6990 4390 50  0001 C CNN
 	1    6990 4390
 	0    -1   -1   0   
@@ -414,37 +404,9 @@ Connection ~ 3850 2600
 Wire Wire Line
 	5600 1710 6050 1710
 Wire Wire Line
-	5950 3120 5950 4530
-Wire Wire Line
-	5950 4530 5950 5120
-Wire Wire Line
-	5600 2940 6390 2940
-Wire Wire Line
-	6390 2940 6390 4090
-Wire Wire Line
 	5950 3120 5600 3120
 Wire Wire Line
-	5950 5120 6390 5120
-Wire Wire Line
-	6390 5120 7280 5120
-Wire Wire Line
 	7280 5120 7710 5120
-Wire Notes Line
-	5740 3700 7790 3700
-Wire Notes Line
-	7790 3700 7790 5280
-Wire Notes Line
-	5740 3700 5740 5360
-Wire Notes Line
-	5740 5360 7490 5360
-Wire Notes Line
-	7490 5360 7490 5280
-Wire Wire Line
-	5630 4530 5950 4530
-Wire Notes Line
-	7370 3700 7370 3860
-Wire Notes Line
-	7370 3860 7780 3860
 Wire Wire Line
 	7280 4650 7280 4730
 Wire Wire Line
@@ -467,21 +429,11 @@ Wire Wire Line
 	7900 4780 8290 4780
 Connection ~ 7900 4680
 Wire Wire Line
-	5670 3740 5670 3920
-Wire Wire Line
-	5670 3920 5670 4330
-Wire Wire Line
-	5670 4330 5670 4430
-Wire Wire Line
-	5600 3740 5670 3740
-Wire Wire Line
 	5650 1610 5650 1810
 Connection ~ 5650 1810
 Wire Wire Line
 	5740 1810 5740 1960
 Connection ~ 5740 1810
-Wire Wire Line
-	3000 2110 3450 2110
 Wire Wire Line
 	5600 1510 6050 1510
 Wire Wire Line
@@ -505,73 +457,6 @@ Wire Wire Line
 	5600 2490 5920 2490
 Wire Wire Line
 	5920 2590 5600 2590
-$Comp
-L Device:R_Small R2
-U 1 1 5A9B7BDC
-P 6090 4610
-F 0 "R2" V 6140 4610 30  0000 L CNN
-F 1 "330" V 6090 4560 30  0000 L CNN
-F 2 "w_pth_resistors:RC03" H 6090 4610 50  0001 C CNN
-F 3 "" H 6090 4610 50  0000 C CNN
-	1    6090 4610
-	-1   0    0    1   
-$EndComp
-$Comp
-L linear:LM358 U2
-U 1 1 5B4FA1EF
-P 6490 4390
-F 0 "U2" H 6490 4590 50  0000 L CNN
-F 1 "LM358" H 6490 4190 50  0000 L CNN
-F 2 "w_pth_circuits:dil_8-300_socket" H 6490 4390 50  0001 C CNN
-F 3 "" H 6490 4390 50  0001 C CNN
-	1    6490 4390
-	1    0    0    -1  
-$EndComp
-$Comp
-L linear:LM358 U2
-U 2 1 5B4FA234
-P 6700 6080
-F 0 "U2" H 6700 6230 50  0000 L CNN
-F 1 "LM358" H 6700 5880 50  0000 L CNN
-F 2 "w_pth_circuits:dil_8-300_socket" H 6700 6080 50  0001 C CNN
-F 3 "" H 6700 6080 50  0001 C CNN
-	2    6700 6080
-	1    0    0    -1  
-$EndComp
-Wire Bus Line
-	5500 3940 4940 3940
-Wire Bus Line
-	4940 3940 4940 5690
-Wire Bus Line
-	4940 5690 5810 5690
-Entry Wire Line
-	5810 5730 5910 5630
-Wire Wire Line
-	6600 5780 6600 5630
-Wire Wire Line
-	6600 5630 5910 5630
-Entry Wire Line
-	5810 6080 5910 5980
-Wire Wire Line
-	6400 5980 5910 5980
-Wire Wire Line
-	7000 6080 7050 6080
-Wire Wire Line
-	7050 6080 7160 6080
-Entry Wire Line
-	5810 6540 5910 6440
-Wire Wire Line
-	5910 6440 6600 6440
-Wire Wire Line
-	6600 6440 6600 6380
-Text Label 6090 6440 0    36   ~ 0
-VSS
-Text Label 6060 5630 0    36   ~ 0
-VCC
-Text Label 3180 2110 0    32   ~ 0
-PWM
-Text Label 6070 5980 0    32   ~ 0
-PWM
 Wire Wire Line
 	5600 1810 5650 1810
 Wire Wire Line
@@ -580,50 +465,6 @@ Wire Wire Line
 	5740 1810 6050 1810
 Wire Wire Line
 	7100 1110 7450 1110
-Wire Wire Line
-	6390 4690 6390 5120
-Wire Wire Line
-	5670 4430 5630 4430
-Connection ~ 5950 4530
-$Comp
-L Device:R_Small R4
-U 1 1 5B510C1C
-P 6230 6280
-F 0 "R4" V 6280 6280 30  0000 L CNN
-F 1 "330" V 6230 6230 30  0000 L CNN
-F 2 "w_pth_resistors:RC03" H 6230 6280 50  0001 C CNN
-F 3 "" H 6230 6280 50  0000 C CNN
-	1    6230 6280
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6400 6180 6230 6180
-Wire Wire Line
-	6140 3920 6140 4290
-Wire Wire Line
-	6140 3920 5670 3920
-Connection ~ 5670 3920
-$Comp
-L Device:CP1_Small C2
-U 1 1 5B51233C
-P 7260 6080
-F 0 "C2" H 7270 6150 38  0000 L CNN
-F 1 "CP_220uF" V 7160 5990 30  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 7260 6080 50  0001 C CNN
-F 3 "" H 7260 6080 50  0001 C CNN
-	1    7260 6080
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6790 4390 6840 4390
-Wire Wire Line
-	6840 4390 6890 4390
-Wire Wire Line
-	7360 6080 7360 5430
-Wire Wire Line
-	7360 5430 7130 5430
-Wire Wire Line
-	7130 5430 7130 4390
 $Comp
 L conn:Conn_01x03 J2
 U 1 1 5B513BA6
@@ -636,18 +477,9 @@ F 3 "" H 5430 4430 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5630 4330 5670 4330
-Connection ~ 5670 4330
-Connection ~ 6390 5120
-Wire Wire Line
 	7710 5120 7710 4480
 Wire Wire Line
-	7090 4390 7130 4390
-Wire Wire Line
-	7130 4390 7280 4390
-Wire Wire Line
 	7280 4390 7340 4390
-Connection ~ 7130 4390
 Wire Wire Line
 	7280 4450 7280 4390
 Connection ~ 7280 4390
@@ -657,81 +489,95 @@ Wire Wire Line
 	7490 4120 7900 4120
 NoConn ~ 7490 4540
 Wire Wire Line
-	6190 4490 6090 4490
-Wire Wire Line
-	6090 4490 6090 4510
-Wire Wire Line
-	6090 4710 6090 4730
-Wire Wire Line
-	6090 4730 6840 4730
-Wire Wire Line
-	6840 4730 6840 4390
-Connection ~ 6840 4390
-Wire Wire Line
-	6140 4290 6190 4290
-Wire Wire Line
-	6230 6380 6230 6410
-Wire Wire Line
-	6230 6410 7050 6410
-Wire Wire Line
-	7050 6410 7050 6080
-Connection ~ 7050 6080
+	7090 4390 7280 4390
 $Comp
-L Device:Crystal Y1
-U 1 1 5B69193B
-P 8220 1220
-F 0 "Y1" H 8220 1370 50  0000 C CNN
-F 1 "4Mhz_Crystal" H 8220 1070 30  0000 C CNN
-F 2 "" H 8220 1220 50  0001 C CNN
-F 3 "" H 8220 1220 50  0001 C CNN
-	1    8220 1220
+L Oscillator:CXO_DIP14 X1
+U 1 1 5B9072D5
+P 2800 2670
+F 0 "X1" H 2610 2930 50  0000 L CNN
+F 1 "CLK_DIP14_4Mhz" H 2620 2370 30  0000 L CNN
+F 2 "Oscillators:Oscillator_DIP-14_LargePads" H 3250 2320 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 2700 2670 50  0001 C CNN
+	1    2800 2670
 	1    0    0    -1  
 $EndComp
+Entry Wire Line
+	3450 2310 3550 2210
+Entry Wire Line
+	3450 2980 3550 2880
+Entry Wire Line
+	3450 2520 3550 2420
+Wire Wire Line
+	3450 2520 3310 2520
+Wire Wire Line
+	3310 2520 3310 2670
+NoConn ~ 2500 2670
+Text Label 3160 2670 0    32   ~ 0
+Clock
+Wire Wire Line
+	3100 2670 3310 2670
+Wire Wire Line
+	3450 2310 2800 2310
+Wire Wire Line
+	2800 2310 2800 2370
+Wire Wire Line
+	2800 3090 3450 3090
+Wire Wire Line
+	3450 3090 3450 2980
 $Comp
-L Device:C C3
-U 1 1 5B691BA9
-P 8100 1700
-F 0 "C3" H 8125 1800 50  0000 L CNN
-F 1 "C_10uF" H 8125 1600 30  0000 L CNN
-F 2 "" H 8138 1550 50  0001 C CNN
-F 3 "" H 8100 1700 50  0001 C CNN
-	1    8100 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5B691CB5
-P 8400 1700
-F 0 "C4" H 8425 1800 50  0000 L CNN
-F 1 "C_10uF" H 8425 1600 30  0000 L CNN
-F 2 "" H 8438 1550 50  0001 C CNN
-F 3 "" H 8400 1700 50  0001 C CNN
-	1    8400 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:Conn_01x06 J1
-U 1 1 5B6930F1
-P 2800 1910
-F 0 "J1" H 2800 2210 50  0000 C CNN
-F 1 "Arduino_in" H 2800 1510 38  0000 C CNN
-F 2 "" H 2800 1910 50  0001 C CNN
-F 3 "" H 2800 1910 50  0001 C CNN
-	1    2800 1910
+L conn:Conn_01x05 J1
+U 1 1 5B92749F
+P 2800 1810
+F 0 "J1" H 2720 1403 50  0000 C CNN
+F 1 "Arduino_in" H 2800 1500 38  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm" H 2800 1810 50  0001 C CNN
+F 3 "~" H 2800 1810 50  0001 C CNN
+	1    2800 1810
 	-1   0    0    1   
 $EndComp
-Wire Notes Line
-	5740 5280 7790 5280
+Text Label 3160 2310 0    28   ~ 0
+VCC
+Text Label 3180 3090 0    28   ~ 0
+VSS
+Wire Wire Line
+	5950 5120 7280 5120
+Wire Wire Line
+	6140 4390 6890 4390
+Wire Wire Line
+	5600 3740 5810 3740
+Wire Wire Line
+	6140 3740 6140 4390
+Wire Wire Line
+	5950 3120 5950 4530
+Wire Wire Line
+	5630 4430 5730 4430
+Wire Wire Line
+	5730 4430 5730 4330
+Wire Wire Line
+	5730 4330 5630 4330
+Wire Wire Line
+	5730 4330 5810 4330
+Wire Wire Line
+	5810 4330 5810 3740
+Connection ~ 5730 4330
+Connection ~ 5810 3740
+Wire Wire Line
+	5810 3740 6140 3740
+Wire Wire Line
+	5630 4530 5950 4530
+Connection ~ 5950 4530
+Wire Wire Line
+	5950 4530 5950 5120
+Wire Wire Line
+	2800 2970 2800 3090
 Wire Bus Line
 	3540 840  5360 840 
-Wire Bus Line
-	5810 5690 5810 6570
 Wire Bus Line
 	7550 610  7550 2060
 Wire Bus Line
 	5400 630  5400 2360
 Wire Bus Line
-	3550 780  3550 2530
+	3550 780  3550 2920
 Wire Bus Line
 	5500 610  5500 3940
 $EndSCHEMATC
