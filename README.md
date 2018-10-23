@@ -12,6 +12,7 @@ door: Michiel Erasmus<br/>
 Buy online https://www.tindie.com/products/VliegendeVogel/arduino-soundcard-i2c-and-bbc-microbit-with-mml/
 
 ## Egte versie
+Finale versie 0.7.06 <br>
 <img src="https://cdn.tindiemedia.com/images/resize/G8rt8ruDBmA0pQAMEE5pvddAQmM=/p/fit-in/994x664/filters:fill(fff)/i/04688/products/2018-09-18T22%3A03%3A07.440Z-IMG_2481%20kleiner.jpg" width="50%" height="50%"><br/>
 
 <br/>
