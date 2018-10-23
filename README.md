@@ -8,6 +8,9 @@ door: Michiel Erasmus<br/>
 <img src="https://github.com/pappavis/EasyLab-retro-synth-SN76489/blob/master/KiCAD/SN76489%20arduino%20nano%20shield/plaatje/EasyLabMuziek%20editie_SN76489.jpg?raw=true" width="25%" height="25%"><br/>
 <br/>
 
+# BUY it here & review!!
+Buy online https://www.tindie.com/products/VliegendeVogel/arduino-soundcard-i2c-and-bbc-microbit-with-mml/
+
 ## Egte versie
 <img src="https://cdn.tindiemedia.com/images/resize/G8rt8ruDBmA0pQAMEE5pvddAQmM=/p/fit-in/994x664/filters:fill(fff)/i/04688/products/2018-09-18T22%3A03%3A07.440Z-IMG_2481%20kleiner.jpg" width="50%" height="50%"><br/>
 
