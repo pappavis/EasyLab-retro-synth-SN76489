@@ -19,7 +19,6 @@ Features;<br/>
  * Download Arduino IDE
  * Download en installeer Arduino biblioteek https://github.com/maxint-rd/mxUnifiedSN76489
  * Download en installeer Arduino biblioteek https://github.com/maxint-rd/mxUnifiedPCF8574
- * Download en installeer Arduino biblioteek https://github.com/maxint-rd/FastPwmPin
  * Met Arduino IDE. open voorbeeld Arduino/SN76489_met_PCF8574_arduino_clock_20180131.ino
   
 ## In deze argief ##
