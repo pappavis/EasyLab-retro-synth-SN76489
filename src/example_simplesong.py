@@ -1,7 +1,8 @@
-# Speelt Mary had a Little Lamb via I2C op een ESP8266 met SN76489
-# ChatGPT --> Please write a program in micropython which plays mary Had a Little Lamb using a ESP8266 and SN76489 via I2C. Also, generate a 4Mhz clock signal on pin A0.
+# Speelt Mary had a Little Lamb via I2C op een ESP8266 met SN76489.
+# Dank aan ChatGPT!!! --> Please write a program in micropython which plays mary Had a Little Lamb using a ESP8266 and SN76489 via I2C. Also, generate a 4Mhz clock signal on pin A0.
 # https://chat.openai.com/chat/ede913fa-4fcb-44ae-81d8-b8f546e91327
 
+# MicroPython code.
 import machine
 import time
 
