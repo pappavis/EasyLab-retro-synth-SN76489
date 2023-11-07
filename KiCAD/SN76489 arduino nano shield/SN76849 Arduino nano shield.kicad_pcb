@@ -2217,7 +2217,7 @@
     (stroke (width 0.15) (type default)) (layer "Edge.Cuts") (tstamp d5d348ae-f0e6-4462-9186-1f1f3aea0477))
   (gr_line (start 84.1 61) (end 80.1 64)
     (stroke (width 0.15) (type default)) (layer "Edge.Cuts") (tstamp d6eafc7d-e869-4978-b4f1-c11fd9fc79f6))
-  (gr_text "SN76489 Arduino retro synth v20231106 1.0\nOntwerp: 2023 Michiel Erasmus" (at 60 47.4) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005b932a18)
+  (gr_text "SN76489 ESP32 retro synth v20231106 1.0\nOntwerp: 2023 Michiel Erasmus" (at 58.7 45.9) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005b932a18)
     (effects (font (size 0.7 0.7) (thickness 0.175)) (justify left))
   )
   (gr_text "Audio-L" (at 79.2 56.8 90) (layer "F.SilkS") (tstamp 03d768fe-5493-40b1-817f-08a4ea2211ef)
