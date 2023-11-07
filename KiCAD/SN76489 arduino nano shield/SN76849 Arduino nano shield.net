@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "C:\\Users\\m.erasmus\\OneDrive - Fugro\\KiCAD\\pappavis\\EasyLab-retro-synth-SN76489\\KiCAD\\SN76489 arduino nano shield\\SN76849 Arduino nano shield.kicad_sch")
-    (date "7-11-2023 15:13:14")
+    (date "7-11-2023 15:29:52")
     (tool "Eeschema 7.0.6")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -22,6 +22,7 @@
   (components
     (comp (ref "C2")
       (value "250uF")
+      (footprint "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm")
       (libsource (lib "Device") (part "C_Small") (description "Unpolarized capacitor, small symbol"))
       (property (name "Sheetname") (value ""))
       (property (name "Sheetfile") (value "SN76849 Arduino nano shield.kicad_sch"))
@@ -88,7 +89,8 @@
       (sheetpath (names "/") (tstamps "/"))
       (tstamps "00000000-0000-0000-0000-00005b26d965"))
     (comp (ref "RV2")
-      (value "Volume_10k")
+      (value "Pot_10k")
+      (footprint "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical")
       (libsource (lib "Device") (part "R_Potentiometer_Small") (description "Potentiometer"))
       (property (name "Sheetname") (value ""))
       (property (name "Sheetfile") (value "SN76849 Arduino nano shield.kicad_sch"))
