@@ -1,0 +1,14 @@
+.title KiCad schematic
+U1 __U1
+J3 __J3
+RV2 __RV2
+J2 __J2
+J8 __J8
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 250u
+U2 __U2
+J6 __J6
+J5 __J5
+J4 __J4
+J7 __J7
+U3 __U3
+.end

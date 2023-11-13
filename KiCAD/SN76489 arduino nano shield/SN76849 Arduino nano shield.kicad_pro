@@ -545,7 +545,7 @@
       "idf": "",
       "netlist": "SN76849 Arduino nano shield.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "SN76849 Arduino nano shield.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

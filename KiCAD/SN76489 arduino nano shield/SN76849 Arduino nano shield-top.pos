@@ -1,0 +1,15 @@
+### Footprint positions - created on Mon Nov 13 13:08:07 2023 ###
+### Printed by KiCad version 7.0.6
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val          Package                                   PosX       PosY       Rot  Side
+C2        250uF        C_Disc_D3.4mm_W2.1mm_P2.50mm           66.9000   -40.4500  -90.0000  top
+J2        audio_debug  PinHeader_1x03_P2.54mm_Vertical        80.6000   -58.6000  180.0000  top
+J3        OLED_wit     PinHeader_1x04_P2.54mm_Horizontal      38.1750   -55.2000  180.0000  top
+J4        ESP32Conn    PinHeader_1x06_P2.54mm_Vertical        45.0200   -61.1000  -90.0000  top
+J5        LOGO         Sovjet_simpits_logo01                  71.3000   -32.5000    0.0000  top
+RV2       Pot_10k      Potentiometer_Bourns_3339P_Vertical    56.8400   -29.1400    0.0000  top
+U1        PCF8574      DIP-16_W7.62mm                         28.8500   -23.5500    0.0000  top
+U2        LM386        DIP-8_W7.62mm                          52.3000   -34.0000    0.0000  top
+U3        SN76489      DIP-16_W7.62mm                         41.0000   -23.7200    0.0000  top
+## End

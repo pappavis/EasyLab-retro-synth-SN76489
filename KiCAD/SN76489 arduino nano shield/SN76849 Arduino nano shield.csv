@@ -1,0 +1,11 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"P1";"Jack_3.5mm_CUI_SJ1-3523N_Horizontal";1;"TRS_JACK";;;
+2;"J5";"Sovjet_simpits_logo01";1;"LOGO";;;
+3;"U2";"DIP-8_W7.62mm";1;"LM386";;;
+4;"J2";"PinHeader_1x03_P2.54mm_Vertical";1;"audio_debug";;;
+5;"RV2";"Potentiometer_Bourns_3339P_Vertical";1;"Pot_10k";;;
+6;"C2";"C_Disc_D3.4mm_W2.1mm_P2.50mm";1;"250uF";;;
+7;"J4";"PinHeader_1x06_P2.54mm_Vertical";1;"ESP32Conn";;;
+8;"U1";"DIP-16_W7.62mm";1;"PCF8574";;;
+9;"U3";"DIP-16_W7.62mm";1;"SN76489";;;
+10;"J3";"PinHeader_1x04_P2.54mm_Horizontal";1;"OLED_wit";;;
